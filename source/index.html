@@ -94,8 +94,12 @@
           </ul>
           <p class="results__toggles slider__toggles">
             <span class="results__legend">Было</span>
-            <button class="slider__toggle slider__toggle--current" type="button"></button>
-            <button class="slider__toggle" type="button"></button>
+            <button class="slider__toggle slider__toggle--current" type="button">
+              <span class="visually-hidden">Показать кота до начала программы</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Показать кота после завершения программы</span>
+            </button>
             <span class="results__legend">Стало</span>
           </p>
         </div>
@@ -113,7 +117,7 @@
       <section class="map">
         <h2 class="visually-hidden">Карта проезда</h2>
         <div class="map__wrapper">
-          <!-- Пока поставлю заглушку по размерам как на макете, потом будет iframe -->
+          <!-- Пока поставлю заглушку по размерам как на макете, потом будет изображение с макета (на случай, если iframe не загрузится) + поверх него iframe -->
           <img src="https://via.placeholder.com/320x362" width="320" height="362" alt="Карта проезда">
         </div>
       </section>
@@ -121,16 +125,22 @@
         <h2 class="visually-hidden">Кэт энерджи</h2>
         <div class="footer-logo__wrapper">
           <!-- Тут будет свг -->
-          <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Кэт энерджи в виде надписи">
+          <a href="index.html"><img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Кэт энерджи в виде надписи"></a>
         </div>
       </section>
       <section class="social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <div class="social__wrapper">
           <!-- Тут будут свг -->
-          <img src="https://via.placeholder.com/23x16" width="23" height="16" alt="Логотип Вконтакте">
-          <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Логотип Инстаграм">
-          <img src="https://via.placeholder.com/23x16" width="22" height="22" alt="Логотип Фэйсбук">
+          <a class="social__button" href="#" aria-label="Перейти на нашу страницу во Вконтакте">
+            <img src="https://via.placeholder.com/23x16" width="23" height="16" alt="Логотип Вконтакте">
+          </a>
+          <a class="social__button" href="#" aria-label="Перейти на нашу страницу во Инстаграме">
+            <img src="https://via.placeholder.com/16x16" width="16" height="16" alt="Логотип Инстаграм">
+          </a>
+          <a class="social__button" href="#" aria-label="Перейти на нашу страницу в Фэйсбуке">
+            <img src="https://via.placeholder.com/23x16" width="22" height="22" alt="Логотип Фэйсбук">
+          </a>
         </div>
       </section>
       <section class="copyright">
@@ -138,7 +148,9 @@
         <div class="copyright__wrapper">
           <p class="copyright__owner">HTML Academy</p>
           <!-- Тут будет свг -->
-          <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+          <a class="social__button" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Перейти на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+            <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+          </a>
         </div>
       </section>
     </footer>
