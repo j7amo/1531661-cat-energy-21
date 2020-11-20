@@ -1,20 +1,44 @@
 .promo {
-  background-image: url("../../img/index-background-desktop.jpg");
+  background-image:
+    url("../../img/green-mask-mobile.png"),
+    url("../../img/index-background-desktop.jpg");
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  min-height: 480px;
+  box-sizing: border-box;
+  padding: 27px 0 0 0;
 }
 
 .promo__wrapper {
-
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .promo__title {
-
+  font-family: "Oswald 400", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .promo__slogan {
-
+  font-family: "Oswald 400", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-white;
+  margin: 20px 0 24px 0;
+  padding: 5px 20px;
+  box-sizing: border-box;
 }
 
 .promo__image {
-
+  display: block;
+  margin: 0 auto 3px;
 }
 

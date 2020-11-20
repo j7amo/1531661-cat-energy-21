@@ -1,10 +1,40 @@
 .main-navigation {
+  position: relative;
 
 }
 
 .main-navigation__toggle {
+  position: absolute;
+  top: -45px;
+  right: 30px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
 
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+    width: 25px;
+    height: 1.5px;
+    background-color: $basic-black;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
 }
+
+
 
 .main-navigation__wrapper {
 
@@ -15,7 +45,11 @@
 }
 
 .main-navigation__item {
+  box-sizing: border-box;
   border-top: 1px solid $special-grey-1;
+  min-height: 66px;
+  text-align: center;
+  padding: 22px 20px;
 }
 
 .main-navigation__item:last-child {
@@ -27,6 +61,9 @@
 }
 
 .main-navigation__link {
-
+  font-family: "Oswald 500", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
 

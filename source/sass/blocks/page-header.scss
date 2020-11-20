@@ -1,8 +1,12 @@
 .page-header {
-  display: flex;
-  justify-content: space-between;
+
+}
+
+.page-header__logo-wrapper {
+  min-height: 66px;
 }
 
 .page-header__logo {
   margin: 12px 0 0 20px;
+  display: inline-block;
 }

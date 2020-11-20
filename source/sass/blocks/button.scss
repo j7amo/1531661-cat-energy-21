@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 10px;
+  font-family: "Oswald 400", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 280px;
+  height: 40px;
+}
+
+.button--pick-order {
+  color: $basic-white;
+  background-color: $basic-green;
+}

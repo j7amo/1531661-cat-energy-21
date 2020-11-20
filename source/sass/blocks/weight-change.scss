@@ -1,0 +1,102 @@
+.weight-change {
+  min-height: 601px;
+  box-sizing: border-box;
+  padding: 22px 20px 7px;
+}
+
+.weight-change__wrapper {
+  margin: 0 auto;
+}
+
+.weight-change__list {
+
+}
+
+.weight-change__item {
+  position: relative;
+  min-height: 266px;
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  padding: 30px 18px 19px;
+  background-color: $basic-grey;
+}
+
+.weight-change__header {
+  font-family: "Oswald 400", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  margin: 0 0 0 68px;
+  padding: 0 5px;
+}
+
+.weight-change__header--slim:before {
+  position: absolute;
+  content:"";
+  width: 50px;
+  height: 53px;
+  top: 21px;
+  left: 22px;
+  background-image: url("../../img/cat-slim.svg");
+  background-repeat: no-repeat;
+}
+
+.weight-change__header--pro:before {
+  position: absolute;
+  content:"";
+  width: 67px;
+  height: 50px;
+  top: 24px;
+  left: 13px;
+  background-image: url("../../img/cat-pro.svg");
+  background-repeat: no-repeat;
+}
+
+.weight-change__slogan {
+  position: relative;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  min-height: 90px;
+  margin: 29px 0 38px;
+  padding: 0 10px 0 2px;
+}
+
+.weight-change__slogan:after {
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 0;
+  bottom: -23px;
+  left: 0;
+  border: 1px solid $basic-grey-1;
+}
+
+.weight-change__link {
+  position: relative;
+  font-family: "Oswald 400", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.weight-change__link:after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  right: -50px;
+  width: 32px;
+  height: 10px;
+  background-image: url("../../img/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+
