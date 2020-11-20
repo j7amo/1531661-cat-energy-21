@@ -1,0 +1,26 @@
+.copyright {
+  min-height: 79px;
+  padding: 0 20px 0;
+  background-color: $basic-grey;
+}
+
+.copyright__wrapper {
+  box-sizing: border-box;
+  min-height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__owner {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+}
+
+.copyright__link {
+
+}

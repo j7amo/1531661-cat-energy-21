@@ -1,0 +1,45 @@
+.slider {
+
+}
+
+.slider__list {
+
+}
+
+.slider__item {
+
+}
+
+.slider__toggles {
+
+}
+
+.slider__toggles--wrapper {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 14px;
+  background-image: url("../../img/slider-back.svg");
+  background-repeat: no-repeat;
+
+  margin: 0 2px;
+}
+
+.slider__toggle {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  width: 35px;
+  height: 6px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  background-image: url("../../img/slider-toggle.svg");
+  background-repeat: no-repeat;
+}
+
+.slider__toggle--current {
+
+}

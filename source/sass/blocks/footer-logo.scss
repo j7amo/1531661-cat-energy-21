@@ -1,0 +1,19 @@
+.footer-logo {
+  box-sizing: border-box;
+  min-height: 94px;
+  min-width: 100px;
+  padding: 0 20px 0;
+  background-color: $basic-grey;
+  text-align: center;
+}
+
+.footer-logo__wrapper {
+  box-sizing: border-box;
+  min-height: 94px;
+  padding: 39px 20px 10px;
+  border-bottom: 1px solid $basic-grey-1;
+}
+
+.footer-logo__link {
+  display: inline-block;
+}
