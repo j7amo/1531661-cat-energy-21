@@ -1,6 +1,5 @@
 .main-navigation {
   position: relative;
-
 }
 
 .main-navigation__toggle {
@@ -14,8 +13,8 @@
   border: 0;
   cursor: pointer;
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     top: 10px;
@@ -25,23 +24,13 @@
     background-color: $basic-black;
   }
 
-  &:before {
+  &::before {
     transform: rotate(45deg);
   }
 
-  &:after {
+  &::after {
     transform: rotate(-45deg);
   }
-}
-
-
-
-.main-navigation__wrapper {
-
-}
-
-.main-navigation__list {
-
 }
 
 .main-navigation__item {
@@ -56,14 +45,9 @@
   border-bottom: 1px solid $special-grey-1;
 }
 
-.main-navigation__item--active {
-
-}
-
 .main-navigation__link {
   font-family: "Oswald 500", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
 }
-

@@ -8,10 +8,6 @@
   margin: 0 auto;
 }
 
-.weight-change__list {
-
-}
-
 .weight-change__item {
   position: relative;
   min-height: 266px;
@@ -31,9 +27,9 @@
   padding: 0 5px;
 }
 
-.weight-change__header--slim:before {
+.weight-change__header--slim::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 50px;
   height: 53px;
   top: 21px;
@@ -42,9 +38,9 @@
   background-repeat: no-repeat;
 }
 
-.weight-change__header--pro:before {
+.weight-change__header--pro::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 67px;
   height: 50px;
   top: 24px;
@@ -67,7 +63,7 @@
   padding: 0 10px 0 2px;
 }
 
-.weight-change__slogan:after {
+.weight-change__slogan::after {
   position: absolute;
   content: "";
   width: 240px;
@@ -88,7 +84,7 @@
   color: $basic-black;
 }
 
-.weight-change__link:after {
+.weight-change__link::after {
   position: absolute;
   content: "";
   top: 6px;
@@ -98,5 +94,3 @@
   background-image: url("../../img/arrow.svg");
   background-repeat: no-repeat;
 }
-
-
