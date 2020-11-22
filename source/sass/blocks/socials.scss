@@ -1,0 +1,22 @@
+.socials {
+  min-height: 62px;
+  padding: 0 20px 0;
+  background-color: $basic-grey;
+  text-align: center;
+}
+
+.socials__wrapper {
+  box-sizing: border-box;
+  min-height: 62px;
+  padding-top: 20px;
+  border-bottom: 1px solid $basic-grey-1;
+}
+
+.socials__inner {
+  max-width: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 auto;
+}
