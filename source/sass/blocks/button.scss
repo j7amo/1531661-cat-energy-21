@@ -3,7 +3,9 @@
   box-sizing: border-box;
   text-align: center;
   padding: 10px 10px;
-  font-family: "Oswald 400", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -14,4 +16,6 @@
 .button--pick-order {
   color: $basic-white;
   background-color: $basic-green;
+
+  width: 100%;
 }

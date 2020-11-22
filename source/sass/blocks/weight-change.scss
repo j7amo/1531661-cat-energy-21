@@ -18,7 +18,9 @@
 }
 
 .weight-change__header {
-  font-family: "Oswald 400", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -66,7 +68,7 @@
 .weight-change__slogan::after {
   position: absolute;
   content: "";
-  width: 240px;
+  width: 100%;
   height: 0;
   bottom: -23px;
   left: 0;
@@ -75,8 +77,9 @@
 
 .weight-change__link {
   position: relative;
-  font-family: "Oswald 400", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-align: center;

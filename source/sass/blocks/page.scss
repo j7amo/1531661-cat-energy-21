@@ -4,14 +4,15 @@
 
 .page__body {
   font-size: 14px;
-  font-family: "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   line-height: 18px;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  max-width: 320px;
+  /*max-width: 320px;*/
   min-height: 100%;
   margin: 0;
-  background-color: $basic-white;
   color: $basic-black;
 }
