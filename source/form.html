@@ -5,10 +5,10 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page__body center-x">
+  <body class="page__body">
     <header class="page-header">
       <div class="page-header__logo-wrapper center-x">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img src="img/logo-with-text-mobile.svg" width="190" height="38" alt="Кэт энерджи">
         </a>
       </div>
@@ -18,14 +18,14 @@
         </button>
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list list">
-            <li class="main-navigation__item main-navigation__item--active">
-              <a class="main-navigation__link">Главная</a>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="main-navigation__item">
               <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-navigation__item">
-              <a class="main-navigation__link" href="form.html">Подбор программы</a>
+              <a class="main-navigation__link main-navigation__item--active">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -33,9 +33,9 @@
     </header>
 
     <main class="page-main">
-      <section class="program">
+      <section class="program center-x">
         <div class="program__wrapper">
-          <h1>Подбор программы</h1>
+          <h1 class="program__main-title">Подбор программы</h1>
           <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
             <p class="program__instructions">Заполните анкету, и мы подберем программу питания для вашего кота</p>
             <section class="cat-data">
@@ -54,7 +54,7 @@
               </p>
               <p class="cat-data__item">
                 <label class="cat-data__title">
-                  <span class="cat-data__field-name">Возраст (лет):</span>
+                  <span class="cat-data__field-name">Возраст&nbsp;(лет):</span>
                   <input class="cat-data__field-value" type="text" placeholder="7">
                 </label>
               </p>
@@ -63,7 +63,7 @@
               <h2 class="visually-hidden">Тип программы</h2>
               <fieldset class="program__types">
                 <legend class="visually-hidden">Выберите тип программы</legend>
-                <ul class="program__list">
+                <ul class="program__list list">
                   <li class="program__item">
                     <label class="program__title">
                       <input class="program__toggle" type="radio" name="program__toggle" value="weight-loss" checked>
@@ -86,7 +86,7 @@
               </fieldset>
             </section>
             <section class="owner-data">
-              <h2>Контактные данные (владельца кота)</h2>
+              <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
               <p class="owner-data__item">
                 <label class="owner-data__title">
                   <span class="owner-data__description">E-mail:*</span>
@@ -108,10 +108,10 @@
               </label>
             </section>
             <section class="additional">
-              <h2>Дополнительно</h2>
+              <h2 class="additional__main-title">Дополнительно</h2>
               <fieldset class="additional__items">
                 <legend class="visually-hidden">Выберите дополнительные товары</legend>
-                <ul class="additional__list">
+                <ul class="additional__list list">
                   <li class="additional__item">
                     <label class="additional__title">
                       <input class="additional__toggle" type="checkbox" name="sugar-substitute" value="" checked>
@@ -165,7 +165,7 @@
       <div class="footer-logo">
         <div class="footer-logo__wrapper">
           <!-- Тут будет свг -->
-          <a class="footer-logo__link"><img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт энерджи в виде надписи"></a>
+          <a class="footer-logo__link" href="index.html"><img src="img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт энерджи в виде надписи"></a>
         </div>
       </div>
       <section class="socials">

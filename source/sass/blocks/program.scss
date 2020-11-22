@@ -1,0 +1,88 @@
+.program {
+
+
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.program__wrapper {
+  padding-top: 27px;
+}
+
+.program__main-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+
+  margin: 0;
+}
+
+.program__form {
+
+}
+
+.program__instructions {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: $basic-black;
+
+  padding-right: 10px;
+  margin: 37px 0 39px 0;
+}
+
+.program__selection {
+
+}
+
+.program__types {
+
+}
+
+.program__list {
+
+}
+
+.program__item {
+
+}
+
+.program__title {
+
+}
+
+.program__toggle {
+
+}
+
+.program__value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.program__request {
+
+}
+
+.program__note {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: $basic-black;
+}
