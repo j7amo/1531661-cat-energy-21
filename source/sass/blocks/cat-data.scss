@@ -1,14 +1,19 @@
+.cat-data {
+  border-bottom: 1px solid $basic-grey-1;
+}
+
 .cat-data__item {
   padding: 0;
   margin: 0 0 14px 0;
 }
 
+.cat-data__item:last-child {
+  margin-bottom: 23px;
+}
+
 .cat-data__title {
   display: flex;
   align-items: center;
-
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 .cat-data__field-name {
@@ -21,21 +26,16 @@
   color: $special-dark-grey;
 
   margin-right: 16px;
-
-  outline: 1px solid red;
-  outline-offset: -1px;
 }
 
 .cat-data__field-value {
   min-height: 46px;
+  width: 100px;
   flex-grow: 1;
 
   padding-left: 15px;
   margin: 0;
   border: 1px solid #E7E7E7;
-
-  outline: 1px solid red;
-  outline-offset: -1px;
 
   &::-webkit-input-placeholder {
     font-family: "Oswald", "Arial", sans-serif;

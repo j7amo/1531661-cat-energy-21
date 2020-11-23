@@ -33,12 +33,12 @@
     </header>
 
     <main class="page-main">
-      <section class="program center-x">
+      <section class="program">
         <div class="program__wrapper">
-          <h1 class="program__main-title">Подбор программы</h1>
+          <h1 class="program__main-title center-x">Подбор программы</h1>
           <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="program__instructions">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-            <section class="cat-data">
+            <p class="program__instructions center-x">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <section class="cat-data center-x">
               <h2 class="visually-hidden">Данные вашего кота</h2>
               <p class="cat-data__item">
                 <label class="cat-data__title">
@@ -59,55 +59,55 @@
                 </label>
               </p>
             </section>
-            <section class="program__selection">
+            <section class="program__selection center-x">
               <h2 class="visually-hidden">Тип программы</h2>
               <fieldset class="program__types">
                 <legend class="visually-hidden">Выберите тип программы</legend>
                 <ul class="program__list list">
                   <li class="program__item">
                     <label class="program__title">
-                      <input class="program__toggle" type="radio" name="program__toggle" value="weight-loss" checked>
+                      <input class="program__toggle visually-hidden" type="radio" name="program__toggle" value="weight-loss" checked>
                       <span class="program__value">ПОХУДЕНИЕ</span>
                     </label>
                   </li>
                   <li class="program__item">
                     <label class="program__title">
-                      <input class="program__toggle" type="radio" name="program__toggle" value="weight-gain">
+                      <input class="program__toggle visually-hidden" type="radio" name="program__toggle" value="weight-gain">
                       <span class="program__value">НАБОР МАССЫ</span>
                     </label>
                   </li>
                   <li class="program__item">
                     <label class="program__title">
-                      <input class="program__toggle" type="radio" name="program__toggle" value="need-advice">
+                      <input class="program__toggle visually-hidden" type="radio" name="program__toggle" value="need-advice">
                       <span class="program__value">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
             </section>
-            <section class="owner-data">
+            <section class="owner-data center-x">
               <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
               <p class="owner-data__item">
-                <label class="owner-data__title">
+                <label class="owner-data__title owner-data__title--email">
                   <span class="owner-data__description">E-mail:*</span>
                   <input class="owner-data__field" type="email" placeholder="kuklachev@gmail.com" required>
                 </label>
               </p>
               <p class="owner-data__item">
-                <label class="owner-data__title">
+                <label class="owner-data__title owner-data__title--tel">
                   <span class="owner-data__description">Телефон:*</span>
                   <input class="owner-data__field" type="tel" placeholder="8 (960) 900-60-90" required>
                 </label>
               </p>
             </section>
-            <section class="comment">
+            <section class="comment center-x">
               <h2 class="visually-hidden">Оставьте ваш комментарий</h2>
               <label class="comment__title">
                 <span class="comment__field-description">Комментарий</span>
                 <textarea class="comment__field" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </section>
-            <section class="additional">
+            <section class="additional center-x">
               <h2 class="additional__main-title">Дополнительно</h2>
               <fieldset class="additional__items">
                 <legend class="visually-hidden">Выберите дополнительные товары</legend>
