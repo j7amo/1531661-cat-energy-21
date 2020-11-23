@@ -1,5 +1,5 @@
 .additional {
-
+  padding-top: 10px;
 }
 
 .additional__main-title {
@@ -9,26 +9,24 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+
+  margin: 0 0 34px 0;
 }
 
 .additional__items {
-
-}
-
-.additional__list {
-
+  border: none;
+  margin: 0 0 34px 0;
+  padding: 0;
 }
 
 .additional__item {
-
+  min-height: 30px;
+  margin-bottom: 12px;
+  padding-left: 46px;
 }
 
-.additional__title {
-
-}
-
-.additional__toggle {
-
+.additional__item:last-child {
+  margin-bottom: 0;
 }
 
 .additional__description {
@@ -40,4 +38,30 @@
   text-transform: uppercase;
 
   color: $basic-black;
+
+  display: block;
+  position: relative;
+  min-height: 30px;
+  padding-top: 5px;
+}
+
+.additional__description::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: -45px;
+  border: 1px solid $special-grey;
+}
+
+.additional__toggle:checked + .additional__description::after {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 15px;
+  top: 8px;
+  left: -38px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
 }

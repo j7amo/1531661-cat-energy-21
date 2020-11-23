@@ -1,9 +1,10 @@
 .comment {
-
+  padding-top: 11px;
+  padding-bottom: 17px;
 }
 
 .comment__title {
-
+  display: block;
 }
 
 .comment__field-description {
@@ -16,6 +17,13 @@
 }
 
 .comment__field {
+  display: block;
+  margin: 34px 0 0 0;
+  width: 100%;
+  min-height: 150px;
+
+  border: 1px solid $special-grey;
+
   &::-webkit-input-placeholder {
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
@@ -23,7 +31,10 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: $special-dark-grey;
+
+    padding-top: 13px;
   }
 
   &::placeholder {
@@ -33,9 +44,11 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: $special-dark-grey;
 
     opacity: 1;
+    padding-top: 13px;
   }
 
   &:-ms-input-placeholder {
@@ -45,7 +58,10 @@
     font-size: 16px;
     line-height: 18px;
     text-transform: uppercase;
+    text-align: center;
     color: $special-dark-grey;
+
+    padding-top: 13px;
   }
 }
 
