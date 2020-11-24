@@ -1,0 +1,64 @@
+.comment {
+  padding-top: 11px;
+  padding-bottom: 17px;
+}
+
+.comment__title {
+  display: block;
+}
+
+.comment__field-description {
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+}
+
+.comment__field {
+  display: block;
+  margin: 34px 0 0 0;
+  width: 100%;
+  min-height: 150px;
+
+  border: 1px solid $special-grey;
+
+  &::-webkit-input-placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+
+    padding-top: 13px;
+    padding-left: 15px;
+  }
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+
+    opacity: 1;
+    padding-top: 13px;
+    padding-left: 15px;
+  }
+
+  &:-ms-input-placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+
+    padding-top: 13px;
+    padding-left: 15px;
+  }
+}
+
