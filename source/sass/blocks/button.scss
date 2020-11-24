@@ -11,10 +11,29 @@
   border: none;
 }
 
+.button--order,
 .button--pick-order,
 .program__request {
   color: $basic-white;
   background-color: $basic-green;
 
   width: 100%;
+}
+
+.button--order {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+
+  margin: 6px 0 23px 0;
+}
+
+.button--show-all {
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+
+  width: 100%;
+}
+
+.button--order-extra {
+  margin-bottom: 18px;
 }
