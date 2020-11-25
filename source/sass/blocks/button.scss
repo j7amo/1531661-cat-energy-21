@@ -21,10 +21,7 @@
 }
 
 .button--order {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-
-  margin: 6px 0 23px 0;
+  margin: 22px 0 0 0;
 }
 
 .button--show-all {
@@ -35,5 +32,5 @@
 }
 
 .button--order-extra {
-  margin-bottom: 18px;
+  margin: 0;
 }
