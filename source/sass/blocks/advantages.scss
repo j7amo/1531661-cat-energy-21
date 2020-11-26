@@ -1,7 +1,7 @@
 .advantages {
   min-height: 420px;
   padding-top: 0;
-  padding-bottom: 42px;
+  padding-bottom: 40px;
   box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@
 .advantages__list {
   min-height: 300px;
   box-sizing: border-box;
-  padding: 2px 0 4px 80px;
+  padding: 2px 0 0 80px;
 }
 
 .advantages__item {
@@ -28,7 +28,7 @@
   line-height: 18px;
   color: $special-dark-grey;
 
-  min-height: 54px;
+  min-height: 60px;
 
   padding: 0 5px 0 0;
   margin: 0 0 20px 0;

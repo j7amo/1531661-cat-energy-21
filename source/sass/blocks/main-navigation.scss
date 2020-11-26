@@ -17,8 +17,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 2px;
+    top: 11px;
+    left: 7px;
     width: 25px;
     height: 1.5px;
     background-color: $basic-black;
@@ -36,9 +36,9 @@
 .main-navigation__item {
   box-sizing: border-box;
   border-top: 1px solid $special-grey-1;
-  min-height: 66px;
+  min-height: 65px;
   text-align: center;
-  padding: 22px 20px;
+  padding: 22px 20px 21px;
 }
 
 .main-navigation__item:last-child {
@@ -50,4 +50,6 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+
+  display: inline-flex;
 }

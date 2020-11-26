@@ -14,7 +14,7 @@
 .goods__item {
   min-height: 207px;
 
-  padding: 19px 20px 23px;
+  padding: 19px 20px 24px;
   border-bottom: 1px solid $special-grey;
 
   &:first-child {
@@ -47,7 +47,7 @@
 
 .goods__title-link {
   display: inline-flex;
-  margin: 0 0 18px 0;
+  margin: 0 0 15px 0;
 }
 
 .goods__title {
@@ -62,20 +62,28 @@
 }
 
 .goods__stats {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: $special-dark-grey;
+
   margin: 0;
+  padding: 0;
 }
 
 .goods__stats-wrapper {
   display: flex;
   justify-content: space-between;
   width: 142px;
+
+  margin: 0;
 }
 
 .goods__number,
 .goods__description {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   color: $special-dark-grey;
 
   margin: 0;
@@ -138,6 +146,10 @@
   margin: 28px 0 34px;
 }
 
+.goods__extra-list {
+  margin-bottom: 39px;
+}
+
 .goods__extra-item {
   padding: 13px 0 18px;
   border-bottom: 1px solid $special-grey;
@@ -188,8 +200,6 @@
 
 .goods__extra-promo-wrapper {
   position: relative;
-
-  margin-top: 39px;
 
   text-align: center;
   padding-top: 186px;
