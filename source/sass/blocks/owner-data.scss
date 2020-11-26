@@ -11,7 +11,7 @@
 
   min-height: 52px;
 
-  margin: 0 0 32px 0;
+  margin: 0 0 31px 0;
 }
 
 .owner-data__item {
@@ -55,7 +55,7 @@
   text-transform: uppercase;
   color: $special-dark-grey;
 
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .owner-data__field {
@@ -75,6 +75,9 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    position: relative;
+    top: 2px;
   }
 
   &::placeholder {
@@ -87,6 +90,9 @@
     color: $special-dark-grey;
 
     opacity: 1;
+
+    position: relative;
+    top: 2px;
   }
 
   &:-ms-input-placeholder {
@@ -97,5 +103,8 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    position: relative;
+    top: 2px;
   }
 }
