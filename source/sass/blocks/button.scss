@@ -21,12 +21,22 @@
 }
 
 .button--order {
-  margin: 22px 0 0 0;
+  font-size: 16px;
+  line-height: 20px;
+
+  margin: 0;
 }
 
 .button--show-all {
   color: $special-dark-grey;
   background-color: $basic-grey;
+  font-size: 16px;
+  line-height: 20px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  height: 60px;
 
   width: 100%;
 }
