@@ -3,6 +3,16 @@
   padding-top: 0;
   padding-bottom: 40px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey-1;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid $special-grey-1;
+    padding-bottom: 8px;
+  }
 }
 
 .advantages__title {
@@ -13,12 +23,38 @@
 
   margin: 0 0 38px 0;
   padding: 0 5px 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
   min-height: 300px;
   box-sizing: border-box;
   padding: 2px 0 0 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .advantages__item {
@@ -32,6 +68,48 @@
 
   padding: 0 5px 0 0;
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 249px;
+    min-height: 280px;
+    padding-top: 151px;
+    padding-right: 0;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 249px;
+    min-height: 280px;
+    padding-top: 151px;
+    padding-right: 0;
+    margin-bottom: 37px;
+  }
+}
+
+.advantages__item-text {
+  position: relative;
+  z-index: 2;
+
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item:nth-child(2n + 1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 135px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 135px;
+  }
 }
 
 .advantages__item:last-child {
@@ -43,12 +121,29 @@
 .advantages__item--tableware::before,
 .advantages__item--clock::before {
   position: absolute;
+  z-index: 1;
   content: "";
   top: -2px;
   left: -80px;
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 .advantages__item--leaf::before {
@@ -65,4 +160,36 @@
 
 .advantages__item--clock::before {
   background-image: url("../img/clock.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--leaf::after,
+  .advantages__item--powder::after,
+  .advantages__item--tableware::after,
+  .advantages__item--clock::after {
+    position: absolute;
+    z-index: 1;
+    content: "1";
+    top: 0;
+    left: 118px;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: $basic-grey;
+  }
+
+  .advantages__item--powder::after {
+    content: "2";
+  }
+
+  .advantages__item--tableware::after {
+    content: "3";
+  }
+
+  .advantages__item--clock::after {
+    content: "4";
+  }
 }

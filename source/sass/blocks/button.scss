@@ -18,6 +18,15 @@
   background-color: $basic-green;
 
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin-left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .button--order {

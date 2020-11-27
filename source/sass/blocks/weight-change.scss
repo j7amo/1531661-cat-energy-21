@@ -2,6 +2,14 @@
   min-height: 601px;
   box-sizing: border-box;
   padding: 22px 20px 7px;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 30px 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 22px 30px 7px;
+  }
 }
 
 .weight-change__wrapper {
@@ -15,6 +23,18 @@
   margin: 0 0 20px;
   padding: 30px 18px 19px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    padding: 77px 18px 53px 52px;
+    margin: 0 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 372px;
+    padding: 77px 18px 53px 52px;
+    margin: 0 0 30px;
+  }
 }
 
 .weight-change__header {
@@ -25,6 +45,20 @@
 
   margin: 0 0 0 68px;
   padding: 0 5px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+  }
 }
 
 .weight-change__header--slim::before {
@@ -36,6 +70,22 @@
   left: 22px;
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    top: 80px;
+    left: 440px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+    height: 211px;
+    top: 80px;
+    left: 440px;
+    background-size: cover;
+  }
 }
 
 .weight-change__header--pro::before {
@@ -47,6 +97,22 @@
   left: 13px;
   background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    top: 80px;
+    left: 405px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 268px;
+    height: 200px;
+    top: 80px;
+    left: 405px;
+    background-size: cover;
+  }
 }
 
 .weight-change__slogan {
@@ -60,6 +126,28 @@
   min-height: 90px;
   margin: 29px 0 42px;
   padding: 0 10px 0 2px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    width: 377px;
+    padding-right: 2px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    width: 377px;
+    padding-right: 2px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+  }
 }
 
 .weight-change__slogan::after {
@@ -70,6 +158,14 @@
   bottom: -23px;
   left: 0;
   border: 1px solid $basic-grey-1;
+
+  @media (min-width: $tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    content: none;
+  }
 }
 
 .weight-change__link {
@@ -79,6 +175,18 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .weight-change__link::after {
@@ -90,4 +198,14 @@
   height: 10px;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    right: -60px;
+  }
 }
