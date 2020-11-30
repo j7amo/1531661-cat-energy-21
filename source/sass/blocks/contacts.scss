@@ -13,7 +13,13 @@
   @media (min-width: $desktop-width) {
     padding-top: 66px;
     padding-bottom: 51px;
-    min-height: 114px;
+    min-height: 201px;
+    min-width: 570px;
+    background-color: $basic-white;
+
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 }
 

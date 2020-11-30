@@ -11,9 +11,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient($basic-white 55%, $basic-grey-2 55%);
-    padding: 42px 30px 15px;
-    min-height: 1081px;
+    background: linear-gradient($basic-white 25%, $basic-grey-2 25%);
+    padding: 0 110px 0;
+
+    display: flex;
+    min-height: 656px;
   }
 }
 
@@ -31,6 +33,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 0;
+
+    width: 50%;
   }
 }
 
@@ -46,12 +51,17 @@
     font-weight: normal;
     font-size: 60px;
     line-height: 60px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     font-weight: normal;
     font-size: 60px;
     line-height: 60px;
+    width: 100%;
+    min-height: 60px;
+
+    margin-top: 58px;
   }
 }
 
@@ -71,6 +81,7 @@
     font-size: 16px;
     line-height: 24px;
     min-height: 72px;
+    width: 100%;
 
     margin: 63px 0 69px 0;
   }
@@ -79,9 +90,36 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    min-height: 72px;
+    min-height: 96px;
+    width: 100%;
 
     margin: 63px 0 69px 0;
+  }
+}
+
+.results__linebreak--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.results__linebreak--tablet {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.results__linebreak--desktop {
+  @media (max-width: $desktop-width - 1px) {
+    display: none;
   }
 }
 
@@ -146,7 +184,7 @@
 
   @media (min-width: $desktop-width) {
     top: -15px;
-    left: -30px;
+    left: -20px;
     width: 162px;
     height: 72px;
     background-image: url("../img/weight-back-tablet.svg");
@@ -196,6 +234,17 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
+    min-width: 327px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.results__photos-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 50%;
   }
 }
 

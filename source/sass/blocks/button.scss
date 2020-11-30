@@ -26,6 +26,10 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
+    min-height: 54px;
+    padding-top: 15px;
+    font-weight: normal;
+    font-size: 20px;
   }
 }
 

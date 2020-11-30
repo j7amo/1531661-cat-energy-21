@@ -1,4 +1,20 @@
+.map {
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+}
+
+.map__wrapper {
+  width: 100%;
+}
+
 .map__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-height: 400px;
+    object-fit: fill;
+  }
 }

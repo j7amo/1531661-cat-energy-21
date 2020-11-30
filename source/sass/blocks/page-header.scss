@@ -1,4 +1,6 @@
 .page-header {
+  position: relative;
+  z-index: 3;
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -9,6 +11,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+
+    padding: 53px 110px 0;
   }
 }
 
@@ -28,11 +32,19 @@
     padding: 0;
 
     min-width: 174px;
-    min-height: 52px;
+    min-height: 59px;
   }
 }
 
 .page-header__logo {
   margin-top: 12px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }

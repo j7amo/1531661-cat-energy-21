@@ -2,11 +2,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    padding-top: 7px;
   }
 }
 
@@ -109,7 +109,8 @@
 
   @media (min-width: $desktop-width) {
     font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $basic-white;
   }
 }

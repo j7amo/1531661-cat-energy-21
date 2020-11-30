@@ -16,3 +16,27 @@
   margin: 0;
   color: $basic-black;
 }
+
+@media (min-width: $desktop-width) {
+  .page__body::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 1044px;
+    height: 696px;
+    background-image:
+      url("../img/index-background-desktop-big.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .page__body::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 1044px;
+    height: 696px;
+    background-color: $basic-green-op-085;
+  }
+}
