@@ -116,17 +116,26 @@
         </div>
         <div class="results__photos-wrapper slider">
           <ul class="results__photos slider__list list">
-            <li class="results__photo results__photo--after slider__item">
+            <li class="results__photo results__photo--after slider__item slider__item--after hidden">
               <img src="img/after-mobile.png" width="251" height="240" alt="Очень стройный кот после завершения программы по снижению веса">
             </li>
-            <li class="results__photo results__photo--before slider__item">
+            <li class="results__photo results__photo--before slider__item slider__item--before shown">
               <img src="img/before-mobile.png" width="311" height="232" alt="Очень толстый кот перед началом программы по снижению веса">
             </li>
           </ul>
           <div class="results__toggles-wrapper">
-            <label class="results__toggles slider__toggles">
+            <label class="results__toggles slider__toggles--mobile">
               <input type="checkbox" class="slider__toggle visually-hidden">
               <span class="slider__track"></span>
+              <span class="results__legend results__legend--before slider__legend">
+                Было
+              </span>
+              <span class="results__legend results__legend--after slider__legend">
+                Стало
+              </span>
+            </label>
+            <label class="results__toggles slider__toggles--tablet">
+              <input type="range" min="0" max="100" value="50" class="slider__range" oninput="moveSlider()">
               <span class="results__legend results__legend--before slider__legend">
                 Было
               </span>
@@ -196,5 +205,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/mobile-slider.js"></script>
   </body>
 </html>
