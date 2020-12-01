@@ -116,27 +116,25 @@
         </div>
         <div class="results__photos-wrapper slider">
           <ul class="results__photos slider__list list">
+            <li class="results__photo results__photo--after slider__item">
+              <img src="img/after-mobile.png" width="251" height="240" alt="Очень стройный кот после завершения программы по снижению веса">
+            </li>
             <li class="results__photo results__photo--before slider__item">
               <img src="img/before-mobile.png" width="311" height="232" alt="Очень толстый кот перед началом программы по снижению веса">
             </li>
-            <!--
-            <li class="results__photo results__photo--after slider__item">
-              <img src="https://via.placeholder.com/251x240" width="251" height="240" alt="Очень стройный кот после завершения программы по снижению веса">
-            </li>
-            -->
           </ul>
-          <p class="results__toggles slider__toggles">
-            <span class="results__legend">Было</span>
-            <span class="results__toggles-wrapper slider__toggles--wrapper">
-              <button class="slider__toggle slider__toggle--current" type="button">
-                <span class="visually-hidden">Показать кота до начала программы</span>
-              </button>
-              <button class="slider__toggle" type="button">
-                <span class="visually-hidden">Показать кота после завершения программы</span>
-              </button>
-            </span>
-            <span class="results__legend">Стало</span>
-          </p>
+          <div class="results__toggles-wrapper">
+            <label class="results__toggles slider__toggles">
+              <input type="checkbox" class="slider__toggle visually-hidden">
+              <span class="slider__track"></span>
+              <span class="results__legend results__legend--before slider__legend">
+                Было
+              </span>
+              <span class="results__legend results__legend--after slider__legend">
+                Стало
+              </span>
+            </label>
+          </div>
         </div>
       </section>
     </main>
