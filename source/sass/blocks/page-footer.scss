@@ -4,11 +4,21 @@
   }
 }
 
+.page-footer__wrapper {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .page-footer__logos-wrapper {
+  background-color: $basic-grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: $basic-grey;
     padding: 0 30px 0;
     min-height: 150px;

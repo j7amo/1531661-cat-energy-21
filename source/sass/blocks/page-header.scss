@@ -17,28 +17,12 @@
   }
 }
 
-.page-header__logo-wrapper {
-  min-height: 65px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-
-    min-width: 174px;
-    min-height: 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-
-    min-width: 174px;
-    min-height: 59px;
-  }
+.page-header__wrapper {
+  padding: 12px 0 0 0;
 }
 
 .page-header__logo {
-  margin-top: 12px;
+  margin: 0 0 16px 20px;
   display: inline-block;
 
   @media (min-width: $tablet-width) {

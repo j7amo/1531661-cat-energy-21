@@ -1,8 +1,7 @@
 .contacts {
   box-sizing: border-box;
   padding-top: 28px;
-  padding-bottom: 0;
-  min-height: 114px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     padding-top: 66px;
@@ -28,9 +27,10 @@
 }
 
 .contacts__wrapper {
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .contacts__promo {
@@ -46,6 +46,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 84px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,4 +66,10 @@
   color: $special-dark-grey;
 
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

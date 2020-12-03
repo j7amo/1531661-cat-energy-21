@@ -33,6 +33,10 @@ a {
 
 .hidden {
   opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+  }
 }
 
 .shown {

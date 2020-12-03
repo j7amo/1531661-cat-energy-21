@@ -1,35 +1,18 @@
 .socials {
-  min-height: 62px;
-  padding: 0 20px 0;
-  background-color: $basic-grey;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    min-height: 33px;
-    min-width: 129px;
-  }
-}
-
-.socials__wrapper {
-  box-sizing: border-box;
-  min-height: 62px;
-  padding-top: 20px;
+  width: 100%;
   border-bottom: 1px solid $basic-grey-1;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    border-bottom: none;
-    min-height: 33px;
-    min-width: 129px;
-  }
 }
 
 .socials__inner {
-  max-width: 130px;
+  width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 21px;
+}
+
+.socials__button {
+  display: inline-flex;
 }

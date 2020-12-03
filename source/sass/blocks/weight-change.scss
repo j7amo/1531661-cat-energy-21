@@ -1,7 +1,8 @@
 .weight-change {
   min-height: 601px;
   box-sizing: border-box;
-  padding: 22px 20px 7px;
+  padding-top: 22px;
+  padding-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px 15px;
@@ -12,10 +13,6 @@
     padding: 0 110px 0;
     margin-bottom: 71px;
   }
-}
-
-.weight-change__wrapper {
-  margin: 0 auto;
 }
 
 .weight-change__list {
