@@ -1,15 +1,14 @@
 .weight-change {
   min-height: 601px;
   padding-top: 22px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 15px;
+    padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 374px;
-    padding: 0 110px 0;
     margin-bottom: 71px;
   }
 }
@@ -29,7 +28,7 @@
   align-items: flex-start;
 
   margin: 0 0 20px;
-  padding: 30px 18px 19px;
+  padding: 30px 18px 22px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
@@ -117,7 +116,7 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 200px;
-    top: 80px;
+    top: 90px;
     left: 405px;
     background-size: cover;
   }
@@ -140,31 +139,33 @@
   color: $special-dark-grey;
   border-bottom: 1px solid $basic-grey-1;
 
-  min-height: 90px;
+  min-height: 113px;
   margin: auto 0 19px;
   padding: 0 10px 23px 2px;
 
   @media (min-width: $tablet-width) {
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: $basic-black;
     width: 377px;
-    padding-right: 2px;
+    padding-right: 3px;
     margin-top: 24px;
     margin-bottom: 48px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: $basic-black;
     width: 467px;
     min-height: 72px;
     padding-right: 2px;
     margin-top: 73px;
     margin-bottom: 27px;
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      padding-right: 32px;
+    }
   }
 }
 

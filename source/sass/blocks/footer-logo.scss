@@ -7,9 +7,14 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    width: 128px;
+    height: 24px;
+    padding: 0;
   }
 }
 
 .footer-logo__link {
   display: block;
+  width: 128px;
+  height: 24px;
 }
