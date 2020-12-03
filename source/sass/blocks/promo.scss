@@ -57,7 +57,6 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 
@@ -87,10 +86,8 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $basic-white;
-  /*margin: 20px 0 24px 0;*/
   margin: 20px 0 298px 0;
   padding: 5px 20px;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;

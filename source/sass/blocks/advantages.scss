@@ -2,7 +2,6 @@
   min-height: 420px;
   padding-top: 0;
   padding-bottom: 40px;
-  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $special-grey-1;
@@ -43,7 +42,6 @@
 
 .advantages__list {
   min-height: 300px;
-  box-sizing: border-box;
   padding: 2px 0 0 80px;
 
   @media (min-width: $tablet-width) {

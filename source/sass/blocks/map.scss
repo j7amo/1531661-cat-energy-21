@@ -10,10 +10,9 @@
 
 .map__image {
   display: block;
-  margin: 0 auto;
+  max-width: 100%;
 
   @media (min-width: $desktop-width) {
-    width: 100%;
     max-height: 400px;
     object-fit: fill;
   }
