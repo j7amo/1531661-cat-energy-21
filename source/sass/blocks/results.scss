@@ -116,15 +116,9 @@
 .results__list {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  padding: 0 20px;
-  margin: 0 0 19px 0;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    width: 366px;
-  }
-
-  @media (min-width: $desktop-width) {
     width: 366px;
   }
 }
@@ -132,6 +126,14 @@
 .results__item {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  border: 1px solid $special-grey;
+  border-radius: 5px;
+
+  width: 124px;
+  height: 56px;
 }
 
 .results__number {
@@ -141,6 +143,8 @@
   color: $basic-black;
   text-transform: uppercase;
 
+  padding-top: 14px;
+
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 30px;
@@ -151,44 +155,19 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 37px;
-  }
-}
-
-.results__number::before {
-  position: absolute;
-  content: "";
-  top: -15px;
-  left: -20px;
-  width: 124px;
-  height: 56px;
-  background-image: url("../img/weight-back.svg");
-  background-repeat: no-repeat;
-
-  @media (min-width: $tablet-width) {
-    top: -15px;
-    left: -20px;
-    width: 162px;
-    height: 72px;
-    background-image: url("../img/weight-back-tablet.svg");
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -15px;
-    left: -20px;
-    width: 162px;
-    height: 72px;
-    background-image: url("../img/weight-back-tablet.svg");
   }
 }
 
 .results__description {
-  width: 80px;
+  width: 87px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $special-dark-grey;
+  background-color: $basic-grey-2;
 
-  margin: 7px 0 0 0;
+  padding: 0 5px;
+  margin: 9px 0 0 0;
 
   @media (min-width: $tablet-width) {
     width: 127px;
