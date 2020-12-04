@@ -29,9 +29,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 690px;
+    width: 650px;
     height: 534px;
     display: flex;
+    transform: translateX(30px);
   }
 }
 

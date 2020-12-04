@@ -11,7 +11,6 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  /*max-width: 320px;*/
   min-height: 100%;
   margin: 0;
   color: $basic-black;
@@ -23,19 +22,12 @@
     content: "";
     top: 0;
     left: 50%;
-    width: 1044px;
+    width: 50vw;
     height: 696px;
-    background-image: url("../img/index-background-desktop-big.jpg");
+    background-image:
+      linear-gradient($basic-white 0%, $basic-green-op-085 0%),
+      url("../img/index-background-desktop-big.png");
     background-repeat: no-repeat;
-  }
 
-  .page__body::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 50%;
-    width: 1044px;
-    height: 696px;
-    background-color: $basic-green-op-085;
   }
 }

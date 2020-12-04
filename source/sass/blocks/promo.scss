@@ -41,12 +41,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: left;
     padding-top: 111px;
     min-height: 584px;
 
     background-image: url("../img/index-can-desktop.png");
-    background-position: 65% 30%;
+    background-position: calc(50% + 120px);
   }
 }
 
