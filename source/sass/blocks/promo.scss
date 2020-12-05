@@ -1,25 +1,52 @@
 .promo {
-  min-height: 480px;
-  box-sizing: border-box;
-  padding: 0;
+  position: relative;
 
   background-image:
     url("../img/green-mask-mobile.png"),
-    url("../img/index-background-desktop.jpg"),
+    url("../img/index-background-desktop.png"),
     url("../img/green-mask-opacity-100.png");
   background-repeat:
     repeat-x,
     no-repeat,
     repeat-x;
   background-position-x: center;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 82px;
+    min-height: 584px;
+  }
 }
 
 .promo__wrapper {
+  position: relative;
+  z-index: 3;
   text-align: center;
-  max-width: 320px;
+  background-image: url("../img/index-can-mobile.png");
   background-repeat: no-repeat;
+  background-position: 50% 79%;
 
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    min-height: 874px;
+    padding-top: 64px;
+
+    background-image: url("../img/index-can-tablet.png");
+    background-position: 50% 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 111px;
+    min-height: 584px;
+
+    background-image: url("../img/index-can-desktop.png");
+    background-position: calc(50% + 120px);
+  }
 }
 
 .promo__title {
@@ -27,9 +54,28 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+
+    width: 530px;
+    margin: 0 0 41px 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+
+    width: 530px;
+    margin: 0 0 40px 87px;
+  }
 }
 
 .promo__slogan {
@@ -37,9 +83,28 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $basic-white;
-  margin: 20px 0 24px 0;
+  margin: 20px 0 298px 0;
   padding: 5px 20px;
-  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+
+    width: 530px;
+    margin: 0 0 44px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+
+    width: 530px;
+    margin: 0 0 52px 68px;
+  }
 }
 
 .promo__image {

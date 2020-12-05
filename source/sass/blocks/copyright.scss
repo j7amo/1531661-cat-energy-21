@@ -1,15 +1,27 @@
 .copyright {
-  min-height: 79px;
-  padding: 0 20px 0;
-  background-color: $basic-grey;
+  width: 100%;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 34px;
+    padding: 0;
+  }
 }
 
-.copyright__wrapper {
-  box-sizing: border-box;
-  min-height: 79px;
-  display: flex;
+.copyright__link {
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 34px;
+    padding: 0;
+  }
 }
 
 .copyright__owner {

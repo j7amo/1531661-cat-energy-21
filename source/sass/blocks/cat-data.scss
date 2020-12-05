@@ -21,12 +21,22 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+}
 
+.cat-data__item:nth-child(2) .cat-data__field-name {
+  margin-right: 13px;
+}
+
+.cat-data__item:nth-child(3) .cat-data__field-name {
   margin-right: 16px;
 }
 
+.cat-data__item:nth-child(4) .cat-data__field-name {
+  margin-right: 14px;
+}
+
 .cat-data__field-value {
-  min-height: 46px;
+  min-height: 45px;
   width: 100px;
   flex-grow: 1;
 
@@ -42,6 +52,9 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    position: relative;
+    top: 2px;
   }
 
   &::placeholder {
@@ -54,6 +67,9 @@
     color: $special-dark-grey;
 
     opacity: 1;
+
+    position: relative;
+    top: 2px;
   }
 
   &:-ms-input-placeholder {
@@ -64,5 +80,8 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $special-dark-grey;
+
+    position: relative;
+    top: 2px;
   }
 }

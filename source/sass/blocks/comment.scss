@@ -11,11 +11,25 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+
+  display: block;
+  margin-bottom: 33px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    min-width: 158px;
+    height: 2px;
+    top: 15px;
+    right: -22px;
+    background-color: $basic-green;
+  }
 }
 
 .comment__field {
   display: block;
-  margin: 34px 0 0 0;
+  margin: 0;
   width: 100%;
   min-height: 150px;
 
@@ -30,8 +44,8 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    padding-top: 13px;
-    padding-left: 15px;
+    padding-top: 10px;
+    padding-left: 12px;
   }
 
   &::placeholder {
@@ -44,8 +58,8 @@
     color: $special-dark-grey;
 
     opacity: 1;
-    padding-top: 13px;
-    padding-left: 15px;
+    padding-top: 10px;
+    padding-left: 12px;
   }
 
   &:-ms-input-placeholder {
@@ -57,7 +71,7 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    padding-top: 13px;
-    padding-left: 15px;
+    padding-top: 10px;
+    padding-left: 12px;
   }
 }

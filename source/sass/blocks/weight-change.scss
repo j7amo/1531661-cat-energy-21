@@ -1,20 +1,55 @@
 .weight-change {
   min-height: 601px;
-  box-sizing: border-box;
-  padding: 22px 20px 7px;
+  padding-top: 22px;
+  padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 374px;
+    margin-bottom: 71px;
+  }
 }
 
-.weight-change__wrapper {
-  margin: 0 auto;
+.weight-change__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .weight-change__item {
   position: relative;
   min-height: 266px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   margin: 0 0 20px;
-  padding: 30px 18px 19px;
+  padding: 30px 18px 22px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    padding: 77px 18px 53px 52px;
+    margin: 0 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 374px;
+    padding: 77px 18px 59px 52px;
+    margin: 0;
+
+    flex-grow: 1;
+  }
+}
+
+.weight-change__item:first-child {
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
 
 .weight-change__header {
@@ -23,11 +58,25 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  margin: 0 0 0 68px;
+  margin: auto 0 29px 68px;
   padding: 0 5px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 0 162px;
+  }
 }
 
-.weight-change__header--slim::before {
+.weight-change__item--slim::before {
   position: absolute;
   content: "";
   width: 50px;
@@ -36,9 +85,25 @@
   left: 22px;
   background-image: url("../img/cat-slim.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    top: 80px;
+    left: 440px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    top: 47px;
+    left: 52px;
+    background-size: cover;
+  }
 }
 
-.weight-change__header--pro::before {
+.weight-change__item--pro::before {
   position: absolute;
   content: "";
   width: 67px;
@@ -47,6 +112,22 @@
   left: 13px;
   background-image: url("../img/cat-pro.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    top: 90px;
+    left: 405px;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    top: 47px;
+    left: 35px;
+    background-size: cover;
+  }
 }
 
 .weight-change__slogan {
@@ -56,20 +137,36 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+  border-bottom: 1px solid $basic-grey-1;
 
-  min-height: 90px;
-  margin: 29px 0 38px;
-  padding: 0 10px 0 2px;
-}
+  min-height: 113px;
+  margin: auto 0 19px;
+  padding: 0 10px 23px 2px;
 
-.weight-change__slogan::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  bottom: -23px;
-  left: 0;
-  border: 1px solid $basic-grey-1;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-black;
+    width: 377px;
+    padding-right: 3px;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+    min-height: 72px;
+    padding-right: 2px;
+    margin-top: 73px;
+    margin-bottom: 27px;
+  }
+
+  &--pro {
+    @media (min-width: $tablet-width) {
+      padding-right: 32px;
+    }
+  }
 }
 
 .weight-change__link {
@@ -79,15 +176,37 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .weight-change__link::after {
   position: absolute;
   content: "";
-  top: 6px;
+  top: 2px;
   right: -50px;
   width: 32px;
   height: 10px;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    right: -60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    right: -60px;
+  }
 }

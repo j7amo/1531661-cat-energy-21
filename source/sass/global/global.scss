@@ -30,3 +30,15 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.hidden {
+  opacity: 0;
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+  }
+}
+
+.shown {
+  opacity: 1;
+}

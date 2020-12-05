@@ -1,22 +1,25 @@
 .socials {
-  min-height: 62px;
-  padding: 0 20px 0;
-  background-color: $basic-grey;
-  text-align: center;
-}
+  width: 100%;
 
-.socials__wrapper {
-  box-sizing: border-box;
-  min-height: 62px;
-  padding-top: 20px;
-  border-bottom: 1px solid $basic-grey-1;
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $basic-grey-1;
+  }
 }
 
 .socials__inner {
-  max-width: 130px;
+  width: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.socials__button {
+  display: inline-flex;
 }

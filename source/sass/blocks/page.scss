@@ -11,8 +11,22 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  /*max-width: 320px;*/
   min-height: 100%;
   margin: 0;
   color: $basic-black;
+}
+
+@media (min-width: $desktop-width) {
+  .page__body::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    width: 50vw;
+    height: 696px;
+    background-image:
+      linear-gradient($basic-white 0%, $basic-green-op-085 0%),
+      url("../img/index-background-desktop-big.png");
+    background-repeat: no-repeat;
+  }
 }
