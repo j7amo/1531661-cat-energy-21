@@ -48,4 +48,14 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    width: 282px;
+    height: 52px;
+    margin-left: 0;
+    margin-right: 61px;
+  }
 }

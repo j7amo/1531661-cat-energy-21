@@ -1,6 +1,13 @@
-.owner-data {
+.owner-data__inner {
   padding-top: 26px;
   padding-bottom: 2px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .owner-data__main-title {
@@ -22,6 +29,12 @@
     top: 15px;
     right: -22px;
     background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -67,6 +80,12 @@
   color: $special-dark-grey;
 
   margin-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .owner-data__field {
@@ -89,6 +108,12 @@
 
     position: relative;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &::placeholder {
@@ -104,6 +129,12 @@
 
     position: relative;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:-ms-input-placeholder {
@@ -117,5 +148,11 @@
 
     position: relative;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

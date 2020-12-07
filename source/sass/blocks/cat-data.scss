@@ -1,5 +1,19 @@
 .cat-data {
   border-bottom: 1px solid $basic-grey-1;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.cat-data__inner {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .cat-data__item {
@@ -21,6 +35,12 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-data__item:nth-child(2) .cat-data__field-name {
@@ -55,6 +75,12 @@
 
     position: relative;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &::placeholder {
@@ -70,6 +96,12 @@
 
     position: relative;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:-ms-input-placeholder {
@@ -83,5 +115,11 @@
 
     position: relative;
     top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }

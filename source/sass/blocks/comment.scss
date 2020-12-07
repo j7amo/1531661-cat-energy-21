@@ -1,6 +1,10 @@
-.comment {
-  padding-top: 11px;
-  padding-bottom: 17px;
+.comment__inner {
+  padding: 11px 20px 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .comment__title {
@@ -25,6 +29,12 @@
     right: -22px;
     background-color: $basic-green;
   }
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment__field {
@@ -46,6 +56,12 @@
 
     padding-top: 10px;
     padding-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &::placeholder {
@@ -60,6 +76,12 @@
     opacity: 1;
     padding-top: 10px;
     padding-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:-ms-input-placeholder {
@@ -73,5 +95,11 @@
 
     padding-top: 10px;
     padding-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 }
