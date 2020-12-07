@@ -1,7 +1,10 @@
 .program__form {
+  padding-bottom: 32px;
+
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 67px;
+    padding-bottom: 72px;
   }
 }
 
@@ -52,9 +55,11 @@
 
 .program__selection {
   border-bottom: 1px solid $basic-grey-1;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    margin-bottom: 71px;
   }
 }
 
@@ -80,6 +85,10 @@
 
 .program__item {
   margin-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
 }
 
 .program__title {
@@ -135,13 +144,10 @@
 .program__footer-inner {
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 72px;
-
     display: flex;
   }
 }
