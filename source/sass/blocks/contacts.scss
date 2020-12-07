@@ -23,6 +23,10 @@
 
 .contacts--theme-grey {
   background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
 }
 
 .contacts__wrapper {

@@ -58,4 +58,8 @@
     margin-left: 0;
     margin-right: 61px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 568px;
+  }
 }

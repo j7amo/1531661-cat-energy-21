@@ -1,7 +1,13 @@
 .owner-data {
   margin-bottom: 27px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+    width: 100%;
   }
 }
 
@@ -11,8 +17,13 @@
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -37,6 +48,11 @@
       left: -70px;
       background-color: $basic-green;
     }
+
+    @media (min-width: $desktop-width) {
+      min-width: 70px;
+      left: -110px;
+    }
   }
 
   &::after {
@@ -53,6 +69,11 @@
       right: -67px;
       min-width: 145px;
     }
+
+    @media (min-width: $desktop-width) {
+      right: -110px;
+      min-width: 778px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -60,6 +81,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+  }
+}
+
+.owner-data__inner-flex {
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -75,6 +102,16 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+
+  &:first-child {
+    @media (min-width: $desktop-width) {
+      margin-right: 78px;
+    }
   }
 }
 

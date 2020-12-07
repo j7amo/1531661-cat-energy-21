@@ -22,13 +22,13 @@
             </button>
             <ul class="main-navigation__list list">
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="index.html">Главная</a>
+                <a class="main-navigation__link main-navigation__link--form" href="index.html">Главная</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+                <a class="main-navigation__link main-navigation__link--form" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item main-navigation__item--active">
-                <a class="main-navigation__link">Подбор программы</a>
+                <a class="main-navigation__link main-navigation__link--form">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -41,7 +41,7 @@
         <div class="program__wrapper center-x">
           <h1 class="program__main-title">Подбор программы</h1>
           <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="program__instructions">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            <p class="program__instructions">Заполните анкету, и мы подберем<br class="program__instructions-linebreak"> программу питания для вашего кота</p>
             <section class="cat-data">
               <div class="cat-data__inner">
                 <h2 class="visually-hidden">Данные вашего кота</h2>
@@ -96,18 +96,20 @@
             <section class="owner-data">
               <div class="owner-data__inner">
                 <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
-                <p class="owner-data__item">
-                  <label class="owner-data__title owner-data__title--email">
-                    <span class="owner-data__description">E-mail:*</span>
-                    <input class="owner-data__field" type="email" placeholder="kuklachev@gmail.com" required>
-                  </label>
-                </p>
-                <p class="owner-data__item">
-                  <label class="owner-data__title owner-data__title--tel">
-                    <span class="owner-data__description">Телефон:*</span>
-                    <input class="owner-data__field" type="tel" placeholder="8 (960) 900-60-90" required>
-                  </label>
-                </p>
+                <div class="owner-data__inner-flex">
+                  <p class="owner-data__item">
+                    <label class="owner-data__title owner-data__title--email">
+                      <span class="owner-data__description">E-mail:*</span>
+                      <input class="owner-data__field" type="email" placeholder="kuklachev@gmail.com" required>
+                    </label>
+                  </p>
+                  <p class="owner-data__item">
+                    <label class="owner-data__title owner-data__title--tel">
+                      <span class="owner-data__description">Телефон:*</span>
+                      <input class="owner-data__field" type="tel" placeholder="8 (960) 900-60-90" required>
+                    </label>
+                  </p>
+                </div>
               </div>
             </section>
             <section class="comment">

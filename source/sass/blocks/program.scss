@@ -2,9 +2,13 @@
   padding-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
-    padding-right: 67px;
     padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -15,6 +19,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
   }
 }
 
@@ -29,7 +37,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 0 30px;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
   }
 }
 
@@ -48,8 +60,21 @@
     font-size: 20px;
     line-height: 30px;
     width: 325px;
-    margin-left: 0;
+    margin-left: 70px;
     padding-right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-top: 56px;
+    margin-bottom: 66px;
+    width: 100%;
+  }
+}
+
+.program__instructions-linebreak {
+  @media (max-width: $desktop-width - 1px) {
+    display: none;
   }
 }
 
@@ -61,15 +86,25 @@
     border-bottom: none;
     margin-bottom: 71px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-bottom: 67px;
+  }
 }
 
 .program__selection-inner {
-  padding: 14px 20px 3px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 28px;
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
     padding-right: 0;
-    border: 1px solid $basic-grey-1;
   }
 }
 
@@ -77,6 +112,19 @@
   border: none;
   padding: 0;
   margin: 0;
+
+  padding-top: 14px;
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $basic-grey-1;
+    padding-left: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
+    padding-bottom: 17px;
+  }
 }
 
 .program__list {
@@ -146,9 +194,14 @@
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 70px;
+    padding-right: 67px;
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
