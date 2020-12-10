@@ -10,6 +10,7 @@
   color: $basic-white;
   background-color: $basic-green;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -48,4 +49,18 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    width: 282px;
+    height: 52px;
+    margin-left: 0;
+    margin-right: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }

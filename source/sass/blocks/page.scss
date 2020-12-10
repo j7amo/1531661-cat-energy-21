@@ -17,16 +17,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page__body::before {
+  .page__body--index-background::before {
     position: absolute;
     content: "";
     top: 0;
-    left: 50%;
+    right: 0;
     width: 50vw;
     height: 696px;
     background-image:
       linear-gradient($basic-white 0%, $basic-green-op-085 0%),
       url("../img/index-background-desktop-big.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0, -5px 5px;
   }
 }

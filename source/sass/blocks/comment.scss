@@ -1,6 +1,27 @@
 .comment {
-  padding-top: 11px;
-  padding-bottom: 17px;
+  margin-bottom: 27px;
+  border-top: 2px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+    width: 100%;
+  }
+}
+
+.comment__inner {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .comment__title {
@@ -11,24 +32,33 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
-
+  background-color: $basic-white;
+  width: 162px;
+  padding-left: 20px;
+  transform: translateY(-17px) translateX(-20px);
   display: block;
   margin-bottom: 33px;
-  position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    min-width: 158px;
-    height: 2px;
-    top: 15px;
-    right: -22px;
-    background-color: $basic-green;
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+
+    width: 259px;
+    padding-left: 40px;
+    transform: translateY(-23px) translateX(-40px);
   }
 }
 
 .comment__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   display: block;
+  padding: 10px 19px;
   margin: 0;
   width: 100%;
   min-height: 150px;
@@ -44,8 +74,11 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    padding-top: 10px;
-    padding-left: 12px;
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &::placeholder {
@@ -58,8 +91,12 @@
     color: $special-dark-grey;
 
     opacity: 1;
-    padding-top: 10px;
-    padding-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
   }
 
   &:-ms-input-placeholder {
@@ -71,7 +108,15 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    padding-top: 10px;
-    padding-left: 12px;
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

@@ -1,5 +1,27 @@
 .additional {
-  padding-top: 10px;
+  margin-bottom: 34px;
+  border-top: 2px solid $basic-green;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+    width: 100%;
+  }
+}
+
+.additional__inner {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-right: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .additional__main-title {
@@ -7,29 +29,51 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  background-color: $basic-white;
+  width: 184px;
+  padding-left: 20px;
+  transform: translateY(-17px) translateX(-20px);
 
   margin: 0 0 34px 0;
-  position: relative;
 
-  &::before {
-    position: absolute;
-    content: "";
-    min-width: 136px;
-    height: 2px;
-    top: 15px;
-    right: -22px;
-    background-color: $basic-green;
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
+
+    width: 292px;
+    padding-left: 40px;
+    transform: translateY(-23px) translateX(-40px);
   }
 }
 
 .additional__items {
   border: none;
-  margin: 0 0 34px 0;
+  margin: 0;
   padding: 0;
+}
+
+.additional__list {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .additional__item {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .additional__title {
@@ -53,17 +97,24 @@
   position: relative;
   min-height: 30px;
   padding-left: 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    border: 1px solid $special-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.additional__description::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  left: 0;
-  border: 1px solid $special-grey;
-}
 
 .additional__toggle:checked + .additional__description::after {
   content: "";
