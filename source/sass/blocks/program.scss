@@ -1,21 +1,5 @@
-.program__form {
-  padding-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    padding-bottom: 72px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-bottom: 82px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.program__wrapper {
+.program {
   padding-top: 18px;
-  padding-left: 0;
-  padding-right: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
@@ -26,22 +10,43 @@
   }
 }
 
+.program__form {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 82px;
+  }
+}
+
+.program__wrapper {
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1440px;
+    padding-left: 110px;
+    padding-right: 110px;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .program__main-title {
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
 
-  margin: 0 0 0 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-left: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 110px;
   }
 }
 
@@ -53,21 +58,22 @@
 
   color: $basic-black;
 
+  padding-left: 20px;
   padding-right: 30px;
-  margin: 37px 0 40px 20px;
+  margin: 37px 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 325px;
-    margin-left: 70px;
+    width: 395px;
+    padding-left: 70px;
     padding-right: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
     margin-top: 56px;
     margin-bottom: 66px;
+    padding-left: 0;
     width: 100%;
   }
 }
@@ -94,8 +100,6 @@
 }
 
 .program__selection-inner {
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 70px;
@@ -144,7 +148,7 @@
   cursor: pointer;
   user-select: none;
 
-  padding: 6px 0 0 0;
+  padding: 3px 0;
 }
 
 .program__value {
@@ -190,9 +194,6 @@
 }
 
 .program__footer-inner {
-  padding-right: 20px;
-  padding-left: 20px;
-
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 67px;

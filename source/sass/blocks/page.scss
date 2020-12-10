@@ -28,7 +28,7 @@
       linear-gradient($basic-white 0%, $basic-green-op-085 0%),
       url("../img/index-background-desktop-big.png");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 0, -5px 0;
+    background-size: cover;
+    background-position: 0 0, -5px 5px;
   }
 }

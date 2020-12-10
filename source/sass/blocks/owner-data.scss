@@ -1,5 +1,6 @@
 .owner-data {
   margin-bottom: 27px;
+  border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -13,8 +14,6 @@
 
 .owner-data__inner {
   padding-bottom: 2px;
-  padding-right: 20px;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 70px;
@@ -32,55 +31,22 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
-
   min-height: 52px;
-
+  background-color: $basic-white;
+  width: 221px;
+  padding-left: 20px;
+  transform: translateY(-17px) translateX(-20px);
   margin: 0 0 31px 0;
-  position: relative;
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      min-width: 30px;
-      height: 2px;
-      top: 20px;
-      left: -70px;
-      background-color: $basic-green;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 70px;
-      left: -110px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    min-width: 99px;
-    height: 2px;
-    top: 15px;
-    right: -22px;
-    background-color: $basic-green;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-      right: -67px;
-      min-width: 145px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -110px;
-      min-width: 778px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    width: 593px;
+    padding-left: 40px;
+    transform: translateY(-23px) translateX(-40px);
   }
 }
 
@@ -159,6 +125,11 @@
 }
 
 .owner-data__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   min-height: 46px;
   width: 100px;
   flex-grow: 1;
@@ -176,14 +147,10 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    position: relative;
-    top: 2px;
-
     @media (min-width: $tablet-width) {
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-      top: 4px;
     }
   }
 
@@ -198,14 +165,10 @@
 
     opacity: 1;
 
-    position: relative;
-    top: 2px;
-
     @media (min-width: $tablet-width) {
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-      top: 4px;
     }
   }
 
@@ -218,18 +181,16 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    position: relative;
-    top: 2px;
-
     @media (min-width: $tablet-width) {
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-      top: 4px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     min-height: 52px;
   }
 }

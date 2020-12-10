@@ -1,5 +1,6 @@
 .additional {
   margin-bottom: 34px;
+  border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
@@ -12,9 +13,6 @@
 }
 
 .additional__inner {
-  padding-right: 20px;
-  padding-left: 20px;
-
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 67px;
@@ -31,53 +29,22 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  background-color: $basic-white;
+  width: 184px;
+  padding-left: 20px;
+  transform: translateY(-17px) translateX(-20px);
 
   margin: 0 0 34px 0;
-  position: relative;
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      min-width: 30px;
-      height: 2px;
-      top: 20px;
-      left: -70px;
-      background-color: $basic-green;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 70px;
-      left: -110px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    min-width: 136px;
-    height: 2px;
-    top: 15px;
-    right: -22px;
-    background-color: $basic-green;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-      right: -67px;
-      min-width: 446px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -110px;
-      min-width: 1078px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 57px;
+
+    width: 292px;
+    padding-left: 40px;
+    transform: translateY(-23px) translateX(-40px);
   }
 }
 

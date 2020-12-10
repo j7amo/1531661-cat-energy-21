@@ -10,6 +10,7 @@
   color: $basic-white;
   background-color: $basic-green;
   border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 244px;
@@ -59,7 +60,7 @@
     margin-right: 61px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 568px;
   }
 }

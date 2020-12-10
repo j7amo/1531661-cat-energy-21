@@ -10,15 +10,12 @@
 
   @media (min-width: $desktop-width) {
     width: 569px;
-    margin-left: 110px;
     margin-right: 80px;
     margin-bottom: 67px;
   }
 }
 
 .cat-data__inner {
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 70px;
@@ -75,6 +72,11 @@
 }
 
 .cat-data__field-value {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   min-height: 45px;
   width: 100px;
   flex-grow: 1;
@@ -92,14 +94,10 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    position: relative;
-    top: 2px;
-
     @media (min-width: $tablet-width) {
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-      top: 4px;
     }
   }
 
@@ -114,14 +112,10 @@
 
     opacity: 1;
 
-    position: relative;
-    top: 2px;
-
     @media (min-width: $tablet-width) {
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-      top: 4px;
     }
   }
 
@@ -134,18 +128,16 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    position: relative;
-    top: 2px;
 
     @media (min-width: $tablet-width) {
-      font-weight: normal;
       font-size: 20px;
       line-height: 30px;
-      top: 4px;
     }
   }
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     min-height: 52px;
   }
 }

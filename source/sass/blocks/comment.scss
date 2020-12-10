@@ -1,5 +1,6 @@
 .comment {
   margin-bottom: 27px;
+  border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -12,9 +13,6 @@
 }
 
 .comment__inner {
-  padding-left: 20px;
-  padding-right: 20px;
-
   @media (min-width: $tablet-width) {
     padding-left: 70px;
     padding-right: 67px;
@@ -34,59 +32,33 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
-
+  background-color: $basic-white;
+  width: 162px;
+  padding-left: 20px;
+  transform: translateY(-17px) translateX(-20px);
   display: block;
   margin-bottom: 33px;
-  position: relative;
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      min-width: 30px;
-      height: 2px;
-      top: 20px;
-      left: -70px;
-      background-color: $basic-green;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-width: 70px;
-      left: -110px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    min-width: 158px;
-    height: 2px;
-    top: 15px;
-    right: -22px;
-    background-color: $basic-green;
-
-    @media (min-width: $tablet-width) {
-      top: 20px;
-      right: -67px;
-      min-width: 478px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: -110px;
-      min-width: 1108px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+
+    width: 259px;
+    padding-left: 40px;
+    transform: translateY(-23px) translateX(-40px);
   }
 }
 
 .comment__field {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   display: block;
+  padding: 10px 19px;
   margin: 0;
   width: 100%;
   min-height: 150px;
@@ -101,9 +73,6 @@
     line-height: 18px;
     text-transform: uppercase;
     color: $special-dark-grey;
-
-    padding-top: 10px;
-    padding-left: 12px;
 
     @media (min-width: $tablet-width) {
       font-weight: normal;
@@ -122,8 +91,6 @@
     color: $special-dark-grey;
 
     opacity: 1;
-    padding-top: 10px;
-    padding-left: 12px;
 
     @media (min-width: $tablet-width) {
       font-weight: normal;
@@ -141,13 +108,15 @@
     text-transform: uppercase;
     color: $special-dark-grey;
 
-    padding-top: 10px;
-    padding-left: 12px;
-
     @media (min-width: $tablet-width) {
       font-weight: normal;
       font-size: 20px;
       line-height: 30px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

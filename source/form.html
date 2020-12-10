@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -9,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__wrapper center-x">
         <div class="page-header__inner">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
@@ -38,12 +39,12 @@
 
     <main class="page-main">
       <section class="program">
-        <div class="program__wrapper center-x">
-          <h1 class="program__main-title">Подбор программы</h1>
-          <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="program__main-title center-x">Подбор программы</h1>
+        <form class="program__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="program__wrapper">
             <p class="program__instructions">Заполните анкету, и мы подберем<br class="program__instructions-linebreak"> программу питания для вашего кота</p>
             <section class="cat-data">
-              <div class="cat-data__inner">
+              <div class="cat-data__inner center-x">
                 <h2 class="visually-hidden">Данные вашего кота</h2>
                 <p class="cat-data__item">
                   <label class="cat-data__title">
@@ -66,7 +67,7 @@
               </div>
             </section>
             <section class="program__selection">
-              <div class="program__selection-inner">
+              <div class="program__selection-inner center-x">
                 <h2 class="visually-hidden">Тип программы</h2>
                 <fieldset class="program__types">
                   <legend class="visually-hidden">Выберите тип программы</legend>
@@ -74,95 +75,95 @@
                     <li class="program__item">
                       <label class="program__title">
                         <input class="program__toggle visually-hidden" type="radio" name="program__toggle" value="weight-loss" checked>
-                        <span class="program__value">ПОХУДЕНИЕ</span>
+                        <span class="program__value">Похудение</span>
                       </label>
                     </li>
                     <li class="program__item">
                       <label class="program__title">
                         <input class="program__toggle visually-hidden" type="radio" name="program__toggle" value="weight-gain">
-                        <span class="program__value">НАБОР МАССЫ</span>
+                        <span class="program__value">Набор массы</span>
                       </label>
                     </li>
                     <li class="program__item">
                       <label class="program__title">
                         <input class="program__toggle visually-hidden" type="radio" name="program__toggle" value="need-advice">
-                        <span class="program__value">НЕ ЗНАЮ (НУЖЕН ВАШ СОВЕТ)</span>
+                        <span class="program__value">Не знаю (нужен ваш совет)</span>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
               </div>
             </section>
-            <section class="owner-data">
-              <div class="owner-data__inner">
-                <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
-                <div class="owner-data__inner-flex">
-                  <p class="owner-data__item">
-                    <label class="owner-data__title owner-data__title--email">
-                      <span class="owner-data__description">E-mail:*</span>
-                      <input class="owner-data__field" type="email" placeholder="kuklachev@gmail.com" required>
-                    </label>
-                  </p>
-                  <p class="owner-data__item">
-                    <label class="owner-data__title owner-data__title--tel">
-                      <span class="owner-data__description">Телефон:*</span>
-                      <input class="owner-data__field" type="tel" placeholder="8 (960) 900-60-90" required>
-                    </label>
-                  </p>
-                </div>
-              </div>
-            </section>
-            <section class="comment">
-              <div class="comment__inner">
-                <h2 class="visually-hidden">Оставьте ваш комментарий</h2>
-                <label class="comment__title">
-                  <span class="comment__field-description">Комментарий</span>
-                  <textarea class="comment__field" placeholder="Расскажите обо всех повадках кота"></textarea>
-                </label>
-              </div>
-            </section>
-            <section class="additional">
-              <div class="additional__inner">
-              <h2 class="additional__main-title">Дополнительно</h2>
-              <fieldset class="additional__items">
-                <legend class="visually-hidden">Выберите дополнительные товары</legend>
-                <ul class="additional__list list">
-                  <li class="additional__item">
-                    <label class="additional__title">
-                      <input class="additional__toggle visually-hidden" type="checkbox" name="sugar-substitute" value="" checked>
-                      <span class="additional__description">сахарозаменитель</span>
-                    </label>
-                  </li>
-                  <li class="additional__item">
-                    <label class="additional__title">
-                      <input class="additional__toggle visually-hidden" type="checkbox" name="drinking-water" value="">
-                      <span class="additional__description">питьевая вода</span>
-                    </label>
-                  </li>
-                  <li class="additional__item">
-                    <label class="additional__title">
-                      <input class="additional__toggle visually-hidden" type="checkbox" name="milk" value="">
-                      <span class="additional__description">молоко</span>
-                    </label>
-                  </li>
-                  <li class="additional__item">
-                    <label class="additional__title">
-                      <input class="additional__toggle visually-hidden" type="checkbox" name="vitamins" value="">
-                      <span class="additional__description">витамины</span>
-                    </label>
-                  </li>
-                </ul>
-              </fieldset>
-              </div>
-            </section>
-            <div class="program__footer">
-              <div class="program__footer-inner">
-                <button class="button program__request" type="submit" aria-label="Отправить заявку на подбор программы">отправить заявку</button>
-                <p class="program__note">* — Обязательные поля</p>
+          </div>
+          <section class="owner-data">
+            <div class="owner-data__inner center-x">
+              <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
+              <div class="owner-data__inner-flex">
+                <p class="owner-data__item">
+                  <label class="owner-data__title owner-data__title--email">
+                    <span class="owner-data__description">E-mail:*</span>
+                    <input class="owner-data__field" type="email" placeholder="kuklachev@gmail.com" required>
+                  </label>
+                </p>
+                <p class="owner-data__item">
+                  <label class="owner-data__title owner-data__title--tel">
+                    <span class="owner-data__description">Телефон:*</span>
+                    <input class="owner-data__field" type="tel" placeholder="8 (960) 900-60-90" required>
+                  </label>
+                </p>
               </div>
             </div>
-          </form>
-        </div>
+          </section>
+          <section class="comment">
+            <div class="comment__inner center-x">
+              <h2 class="visually-hidden">Оставьте ваш комментарий</h2>
+              <label class="comment__title">
+                <span class="comment__field-description">Комментарий</span>
+                <textarea class="comment__field" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </div>
+          </section>
+          <section class="additional">
+            <div class="additional__inner center-x">
+            <h2 class="additional__main-title">Дополнительно</h2>
+            <fieldset class="additional__items">
+              <legend class="visually-hidden">Выберите дополнительные товары</legend>
+              <ul class="additional__list list">
+                <li class="additional__item">
+                  <label class="additional__title">
+                    <input class="additional__toggle visually-hidden" type="checkbox" name="sugar-substitute" value="" checked>
+                    <span class="additional__description">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="additional__item">
+                  <label class="additional__title">
+                    <input class="additional__toggle visually-hidden" type="checkbox" name="drinking-water" value="">
+                    <span class="additional__description">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="additional__item">
+                  <label class="additional__title">
+                    <input class="additional__toggle visually-hidden" type="checkbox" name="milk" value="">
+                    <span class="additional__description">молоко</span>
+                  </label>
+                </li>
+                <li class="additional__item">
+                  <label class="additional__title">
+                    <input class="additional__toggle visually-hidden" type="checkbox" name="vitamins" value="">
+                    <span class="additional__description">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            </div>
+          </section>
+          <div class="program__footer">
+            <div class="program__footer-inner center-x">
+              <button class="button program__request" type="submit" aria-label="Отправить заявку на подбор программы">отправить заявку</button>
+              <p class="program__note">* — Обязательные поля</p>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
 
