@@ -24,6 +24,18 @@
   }
 }
 
+.button--order {
+  margin-left: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    height: 39px;
+  }
+}
+
 .button--show-all {
   color: $special-dark-grey;
   background-color: $basic-grey;
@@ -32,14 +44,21 @@
 
   padding-top: 20px;
   padding-bottom: 20px;
-
-  height: 60px;
-
+  margin: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+  }
 }
 
 .button--order-extra {
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    height: 40px;
+  }
 }
 
 .program__request {
