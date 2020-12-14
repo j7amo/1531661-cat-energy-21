@@ -1,13 +1,13 @@
 .owner-data {
-  margin-bottom: 27px;
+  margin-bottom: 35px;
   border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
     width: 100%;
   }
 }
@@ -36,13 +36,13 @@
   width: 221px;
   padding-left: 20px;
   transform: translateY(-17px) translateX(-20px);
-  margin: 0 0 31px 0;
+  margin: 0 0 17px 0;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 36px;
 
     width: 593px;
     padding-left: 40px;
@@ -81,10 +81,46 @@
   }
 }
 
+.owner-data__item:nth-child(1) .owner-data__description{
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 22px;
+  }
+}
+
+.owner-data__item:nth-child(1) .owner-data__field{
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
+  }
+}
+
+.owner-data__item:nth-child(2) .owner-data__description{
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
+}
+
+.owner-data__item:nth-child(2) .owner-data__field{
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+  }
+}
+
 .owner-data__title {
   display: flex;
   position: relative;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .owner-data__title--email::before {
@@ -96,17 +132,27 @@
   height: 14px;
   background-image: url("../img/icon_email.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 17px;
+  }
 }
 
 .owner-data__title--tel::before {
   content: "";
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 13px;
+  right: 13px;
   width: 20px;
   height: 20px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 16px;
+  }
 }
 
 .owner-data__description {
@@ -116,11 +162,13 @@
   color: $special-dark-grey;
 
   margin-right: 10px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 2px;
   }
 }
 

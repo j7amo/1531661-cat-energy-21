@@ -1,14 +1,14 @@
 .results {
-  padding: 27px 0 15px;
+  padding: 27px 0 12px;
   background-color: $basic-grey-2;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient($basic-white 57%, $basic-grey-2 57%);
-    padding: 43px 0 15px;
+    background: linear-gradient($basic-white calc(57% + 3px), $basic-grey-2 calc(57% + 3px));
+    padding: 43px 0 2px;
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient($basic-white 30%, $basic-grey-2 30%);
+    background: linear-gradient($basic-white 30%, $basic-grey 30%);
     padding: 0;
 
     display: flex;
@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 62px;
+    margin-bottom: 73px;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,8 +74,8 @@
 
   min-height: 108px;
 
-  margin: 33px 0 40px 0;
-  padding: 0 5px 0 0;
+  margin: 33px 0 24px 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -83,13 +83,15 @@
     line-height: 24px;
     min-height: 72px;
     width: 100%;
+    padding-right: 10px;
 
-    margin: 63px 0 69px 0;
+    margin: 65px 0 53px 0;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 96px;
     margin: 146px 0 69px 0;
+    padding-right: 145px;
   }
 }
 
@@ -122,7 +124,7 @@
 .results__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     width: 366px;
@@ -247,6 +249,8 @@
   @media (min-width: $desktop-width) {
     width: 650px;
     height: 73px;
+    justify-content: flex-end;
+    padding-top: 28px;
   }
 }
 
@@ -257,6 +261,10 @@
   margin: 0 0 0 0;
   padding: 0 10px 0;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
+  }
 }
 
 .results__legend {
@@ -276,8 +284,20 @@
 
 .results__legend--before {
   order: 0;
+  margin-left: 4px;
+  margin-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 7px;
+    margin-left: 0;
+  }
 }
 
 .results__legend--after {
   order: 2;
+  margin-left: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 3px;
+  }
 }

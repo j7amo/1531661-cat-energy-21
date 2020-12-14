@@ -4,12 +4,13 @@
   padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 374px;
-    margin-bottom: 71px;
+    margin-bottom: 56px;
   }
 }
 
@@ -66,6 +67,7 @@
     font-size: 36px;
     line-height: 36px;
     margin: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,14 +92,14 @@
     width: 200px;
     height: 211px;
     top: 80px;
-    left: 440px;
+    left: 446px;
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 106px;
-    top: 47px;
+    top: 40px;
     left: 52px;
     background-size: cover;
   }
@@ -117,15 +119,15 @@
     width: 268px;
     height: 200px;
     top: 90px;
-    left: 405px;
+    left: 411px;
     background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 100px;
-    top: 47px;
-    left: 35px;
+    top: 45px;
+    left: 33px;
     background-size: cover;
   }
 }
@@ -141,7 +143,7 @@
 
   min-height: 113px;
   margin: auto 0 19px;
-  padding: 0 10px 23px 2px;
+  padding: 0 10px 21px 2px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -149,8 +151,8 @@
     color: $basic-black;
     width: 377px;
     padding-right: 3px;
-    margin-top: 24px;
-    margin-bottom: 48px;
+    margin-top: 25px;
+    margin-bottom: 31px;
     border-bottom: none;
   }
 
@@ -159,12 +161,16 @@
     min-height: 72px;
     padding-right: 2px;
     margin-top: 73px;
-    margin-bottom: 27px;
+    margin-bottom: 6px;
   }
 
   &--pro {
     @media (min-width: $tablet-width) {
-      padding-right: 32px;
+      padding-right: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 15px;
     }
   }
 }
@@ -173,17 +179,12 @@
   position: relative;
   font-size: 16px;
   line-height: 16px;
+  padding-left: 1px;
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
