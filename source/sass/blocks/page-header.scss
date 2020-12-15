@@ -37,3 +37,24 @@
     margin: 0;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .page-header__logo-graphics--tablet,
+  .page-header__logo-graphics--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px){
+  .page-header__logo-graphics--mobile,
+  .page-header__logo-graphics--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-graphics--mobile,
+  .page-header__logo-graphics--tablet {
+    display: none;
+  }
+}
