@@ -183,8 +183,12 @@
   margin-top: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 34px;
+    margin-top: 7px;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 8px;
   }
 }
 
@@ -203,6 +207,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 8px;
     margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    padding-left: 4px;
   }
 }
 
