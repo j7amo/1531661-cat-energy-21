@@ -8,6 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 72px;
     padding-bottom: 86px;
   }
 }
@@ -16,7 +17,11 @@
   margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 91px;
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 99px;
   }
 }
 
@@ -43,6 +48,10 @@
     margin-left: 0;
     margin-bottom: 81px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
+  }
 }
 
 .goods__list {
@@ -58,7 +67,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
-    grid-row-gap: 63px;
+    grid-row-gap: 57px;
   }
 }
 
@@ -82,6 +91,10 @@
       background: none;
       background-color: $basic-white;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 90px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -92,8 +105,28 @@
     padding: 0 36px 40px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     min-width: 245px;
+    padding-left: 37px;
+    padding-right: 38px;
+    background: linear-gradient($basic-white 17%, $basic-grey 17%);
+  }
+}
+
+.goods__item:nth-child(1) .goods__title,
+.goods__item:nth-child(2) .goods__title,
+.goods__item:nth-child(7) .goods__title {
+  @media (min-width: $tablet-width) {
+    padding-left: 3px;
+  }
+}
+
+.goods__item:nth-child(3) .goods__title,
+.goods__item:nth-child(4) .goods__title,
+.goods__item:nth-child(5) .goods__title,
+.goods__item:nth-child(6) .goods__title {
+  @media (min-width: $tablet-width) {
+    padding-left: 6px;
   }
 }
 
@@ -117,6 +150,10 @@
     width: 100%;
     height: 200px;
     margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
   }
 }
 
@@ -276,7 +313,11 @@
     width: 100%;
     min-height: 428px;
     border: 2px solid $basic-grey;
-    padding: 163px 35px 36px 36px;
+    padding: 159px 35px 36px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 158px;
   }
 }
 
@@ -293,7 +334,7 @@
     font-size: 20px;
     line-height: 22px;
     width: 136px;
-    margin: 0 auto 23px;
+    margin: 0 auto 24px;
   }
 }
 
@@ -310,6 +351,11 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     top: 82px;
+    left: calc(50% - 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 77px;
     left: calc(50% - 30px);
   }
 }
@@ -331,7 +377,7 @@
     font-size: 16px;
     line-height: 18px;
     width: 167px;
-    margin: 0 auto 82px;
+    margin: 0 auto 86px;
   }
 }
 
@@ -360,12 +406,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    transform: translate(-37px, -50px);
+    transform: translate(-37px, -52px);
   }
 }
 
 .goods__extra-inner {
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+  }
+
   @media (min-width: $desktop-width) {
+    padding-top: 35px;
     display: flex;
     justify-content: space-between;
   }
@@ -396,18 +447,20 @@
   @media (min-width: $tablet-width) {
     padding-left: 38px;
     padding-right: 37px;
-    padding-top: 26px;
+    padding-top: 25px;
     padding-bottom: 28px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-left: 1px solid $special-grey;
+    border-right: 1px solid $special-grey;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     align-items: center;
     justify-content: stretch;
   }
@@ -418,7 +471,7 @@
   margin: 0 0 13px 1px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -448,9 +501,14 @@
 
   margin: 0 0 15px 0;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 4px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    min-width: 320px;
+    padding-top: 9px;
+    min-width: 325px;
   }
 }
 
@@ -472,7 +530,7 @@
   order: 1;
 
   @media (min-width: $tablet-width) {
-    min-width: 95px;
+    min-width: 94px;
     text-align: right;
   }
 
@@ -509,7 +567,7 @@
   @media (min-width: $desktop-width) {
     min-width: 245px;
     height: 289px;
-    padding-top: 185px;
+    padding-top: 188px;
     padding-bottom: 42px;
     justify-content: center;
     background-image: url("../img/gift-photo-desktop.jpg");
