@@ -53,19 +53,19 @@
                 <p class="cat-data__item">
                   <label class="cat-data__title">
                     <span class="cat-data__field-name">Имя:*</span>
-                    <input class="cat-data__field-value" type="text" placeholder="БАРСИК" required>
+                    <input class="cat-data__field-value" type="text" id="cat-name-id" name="cat-name" placeholder="БАРСИК" required>
                   </label>
                 </p>
                 <p class="cat-data__item">
                   <label class="cat-data__title">
                     <span class="cat-data__field-name">Вес (кг):*</span>
-                    <input class="cat-data__field-value" type="text" placeholder="7" required>
+                    <input class="cat-data__field-value" type="text" id="cat-weight-id" name="cat-weight" placeholder="7" required>
                   </label>
                 </p>
                 <p class="cat-data__item">
                   <label class="cat-data__title">
                     <span class="cat-data__field-name">Возраст&nbsp;(лет):</span>
-                    <input class="cat-data__field-value" type="text" placeholder="7">
+                    <input class="cat-data__field-value" type="text" id="cat-age-id" name="cat-age" placeholder="7">
                   </label>
                 </p>
               </div>
@@ -104,13 +104,13 @@
               <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
               <div class="owner-data__inner-flex">
                 <p class="owner-data__item">
-                  <input class="owner-data__field owner-data__field--email" id="email-id" type="email" placeholder="kuklachev@gmail.com" required>
+                  <input class="owner-data__field owner-data__field--email" id="email-id" name="email" type="email" placeholder="kuklachev@gmail.com" required>
                   <label class="owner-data__title owner-data__title--email" for="email-id">
                     <span class="owner-data__description">E-mail:*</span>
                   </label>
                 </p>
                 <p class="owner-data__item">
-                  <input class="owner-data__field owner-data__field--tel" id="tel-id" type="tel" placeholder="8 (960) 900-60-90" required>
+                  <input class="owner-data__field owner-data__field--tel" id="tel-id" name="tel" type="tel" placeholder="8 (960) 900-60-90" required>
                   <label class="owner-data__title owner-data__title--tel" for="tel-id">
                     <span class="owner-data__description">Телефон:*</span>
                   </label>
@@ -123,7 +123,7 @@
               <h2 class="visually-hidden">Оставьте ваш комментарий</h2>
               <label class="comment__title">
                 <span class="comment__field-description">Комментарий</span>
-                <textarea class="comment__field" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="comment__field" placeholder="Расскажите обо всех повадках кота" name="comment"></textarea>
               </label>
             </div>
           </section>
