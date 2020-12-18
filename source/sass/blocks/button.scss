@@ -22,6 +22,14 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
   }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+}
+
+.button:active .button__text {
+    opacity: 0.3;
 }
 
 .button--order {
@@ -49,6 +57,14 @@
 
   @media (min-width: $tablet-width) {
     height: 40px;
+  }
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
   }
 }
 

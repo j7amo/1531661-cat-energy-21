@@ -96,6 +96,29 @@
   margin: 0;
   border: 1px solid $basic-grey-4;
 
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+
+    &::-webkit-input-placeholder {
+      transform: translateX(-1px);
+    }
+    &::placeholder {
+      transform: translateX(-1px);
+    }
+    &:-ms-input-placeholder {
+      transform: translateX(-1px);
+    }
+  }
+
+  &--error {
+    border: 2px solid $status-error;
+  }
+
   &::-webkit-input-placeholder {
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;

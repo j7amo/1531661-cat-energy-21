@@ -70,6 +70,8 @@
 }
 
 .additional__item {
+  display: flex;
+  align-items: center;
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
@@ -80,25 +82,8 @@
 
 .additional__title {
   display: inline-flex;
-  cursor: pointer;
-}
-
-.additional__item:last-child {
-  margin-bottom: 0;
-}
-
-.additional__description {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-
-  color: $basic-black;
-
-  display: inline-flex;
-  align-items: center;
   position: relative;
-  min-height: 30px;
-  padding-left: 46px;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -115,6 +100,28 @@
       top: -5px;
     }
   }
+}
+
+.additional__item:last-child {
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.additional__description {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: $basic-black;
+
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  min-height: 30px;
+  padding-left: 46px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -125,17 +132,53 @@
 }
 
 
-.additional__toggle:checked + .additional__description::after {
-  content: "";
-  position: absolute;
-  width: 19px;
-  height: 15px;
-  top: 8px;
-  left: 5px;
-  background-image: url("../img/check.svg");
-  background-repeat: no-repeat;
+.additional__toggle {
+  &:checked + .additional__title::after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 15px;
+    top: 8px;
+    left: 5px;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
 
-  @media (min-width: $tablet-width) {
-    left: 11px;
+    @media (min-width: $tablet-width) {
+      left: 11px;
+    }
+  }
+
+  &:hover {
+    & + .additional__title::before {
+      border: 1px solid $special-grey-4;
+    }
+  }
+
+  &:disabled {
+    & + .additional__title {
+      & > .additional__description {
+        opacity: 0.3;
+      }
+
+      &::before {
+        border: 1px solid $special-grey-4;
+        opacity: 0.3;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 19px;
+        height: 15px;
+        top: 8px;
+        left: 5px;
+        background-image: url("../img/check.svg");
+        background-repeat: no-repeat;
+
+        @media (min-width: $tablet-width) {
+          left: 11px;
+        }
+      }
+    }
   }
 }

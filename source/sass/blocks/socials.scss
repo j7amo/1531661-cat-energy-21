@@ -45,23 +45,41 @@
   }
 }
 
-.socials__network--vkontakte {
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 22px;
-  }
-}
+.socials__network {
+  fill: $special-grey-3;
 
-.socials__network--instagram {
-  @media (min-width: $tablet-width) {
-    width: 23px;
-    height: 23px;
+  &:hover {
+    fill: $basic-green;
   }
-}
 
-.socials__network--facebook {
-  @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 30px;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vkontakte {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 22px;
+    }
+  }
+
+  &--instagram {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--facebook {
+    stroke: $special-grey-3;
+
+    &:hover {
+      stroke: $basic-green;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 30px;
+    }
   }
 }

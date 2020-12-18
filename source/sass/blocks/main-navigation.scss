@@ -70,27 +70,37 @@
   padding: 22px 20px 21px;
 
   &:last-child {
-    border-bottom: 1px solid $special-grey-1;
-
-    @media (min-width: $tablet-width) {
-      border-bottom: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      border-bottom: none;
+    @media (max-width: $mobile-width-only) {
+      border-bottom: 1px solid $special-grey-1;
     }
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
     min-height: 24px;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
     min-height: 24px;
     border-top: none;
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  &--active-desktop {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $basic-white;
+    }
   }
 }
 
@@ -108,15 +118,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    color: $basic-white;
   }
 
-  &--form {
+  &--desktop {
     @media (min-width: $desktop-width) {
-      color: $basic-black;
+      color: $basic-white;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

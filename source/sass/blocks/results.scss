@@ -193,7 +193,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey-2;
+    background-color: $basic-grey;
   }
 }
 
@@ -262,6 +262,10 @@
   padding: 0 10px 0;
   text-align: center;
 
+  @media (min-width: $tablet-width) {
+    min-height: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 15px;
   }
@@ -279,6 +283,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    border-bottom: 2px dotted $special-grey;
   }
 }
 
@@ -288,7 +293,7 @@
   margin-right: 5px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 7px;
+    margin-right: 12px;
     margin-left: 0;
   }
 }
@@ -298,6 +303,6 @@
   margin-left: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 3px;
+    margin-left: 6px;
   }
 }

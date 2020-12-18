@@ -21,7 +21,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
   }
 }
 
@@ -35,6 +35,16 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.page-header__logo-graphics {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

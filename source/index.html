@@ -26,14 +26,14 @@
               <span class="visually-hidden">Открыть меню</span>
             </button>
             <ul class="main-navigation__list list">
-              <li class="main-navigation__item main-navigation__item--active">
-                <a class="main-navigation__link">Главная</a>
+              <li class="main-navigation__item main-navigation__item--active main-navigation__item--active-desktop">
+                <a class="main-navigation__link main-navigation__link--desktop">Главная</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="catalog.html">Каталог продукции</a>
+                <a class="main-navigation__link main-navigation__link--desktop" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link" href="form.html">Подбор программы</a>
+                <a class="main-navigation__link main-navigation__link--desktop" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -46,7 +46,11 @@
         <div class="promo__wrapper center-x">
           <h1 class="promo__title">Функциональное<br> питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <a class="button button--pick-order" href="form.html">Подобрать программу</a>
+          <a class="button" href="form.html">
+            <span class="button__text">
+              Подобрать программу
+            </span>
+          </a>
         </div>
       </section>
       <section class="weight-change">
@@ -157,7 +161,7 @@
                   </span>
                 </label>
                 <label class="results__toggles slider__toggles slider__toggles--tablet">
-                  <input type="range" min="0" max="100" value="50" class="slider__range" oninput="moveSlider()">
+                  <input type="range" min="0" max="100" value="50" class="results__range slider__range" oninput="moveSlider()">
                   <span class="results__legend results__legend--before slider__legend">
                     Было
                   </span>
@@ -200,7 +204,7 @@
         <div class="page-footer__logos-wrapper center-x">
           <div class="footer-logo">
             <a class="footer-logo__link" aria-label="Логотип Кэт энерджи в виде надписи">
-              <svg width="128" height="24">
+              <svg class="footer-logo__graphics" width="128" height="24">
                 <use xlink:href="img/svg-sprite.svg#footer-logo"></use>
               </svg>
             </a>

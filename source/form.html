@@ -27,13 +27,13 @@
             </button>
             <ul class="main-navigation__list list">
               <li class="main-navigation__item">
-                <a class="main-navigation__link main-navigation__link--form" href="index.html">Главная</a>
+                <a class="main-navigation__link" href="index.html">Главная</a>
               </li>
               <li class="main-navigation__item">
-                <a class="main-navigation__link main-navigation__link--form" href="catalog.html">Каталог продукции</a>
+                <a class="main-navigation__link " href="catalog.html">Каталог продукции</a>
               </li>
               <li class="main-navigation__item main-navigation__item--active">
-                <a class="main-navigation__link main-navigation__link--form">Подбор программы</a>
+                <a class="main-navigation__link">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -104,15 +104,15 @@
               <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
               <div class="owner-data__inner-flex">
                 <p class="owner-data__item">
-                  <label class="owner-data__title owner-data__title--email">
+                  <input class="owner-data__field owner-data__field--email" id="email-id" type="email" placeholder="kuklachev@gmail.com" required>
+                  <label class="owner-data__title owner-data__title--email" for="email-id">
                     <span class="owner-data__description">E-mail:*</span>
-                    <input class="owner-data__field" type="email" placeholder="kuklachev@gmail.com" required>
                   </label>
                 </p>
                 <p class="owner-data__item">
-                  <label class="owner-data__title owner-data__title--tel">
+                  <input class="owner-data__field owner-data__field--tel" id="tel-id" type="tel" placeholder="8 (960) 900-60-90" required>
+                  <label class="owner-data__title owner-data__title--tel" for="tel-id">
                     <span class="owner-data__description">Телефон:*</span>
-                    <input class="owner-data__field" type="tel" placeholder="8 (960) 900-60-90" required>
                   </label>
                 </p>
               </div>
@@ -134,26 +134,26 @@
               <legend class="visually-hidden">Выберите дополнительные товары</legend>
               <ul class="additional__list list">
                 <li class="additional__item">
-                  <label class="additional__title">
-                    <input class="additional__toggle visually-hidden" type="checkbox" name="sugar-substitute" value="" checked>
+                  <input class="additional__toggle visually-hidden" id="sugar-substitute" type="checkbox" name="sugar-substitute" value="" checked>
+                  <label class="additional__title" for="sugar-substitute">
                     <span class="additional__description">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="additional__item">
-                  <label class="additional__title">
-                    <input class="additional__toggle visually-hidden" type="checkbox" name="drinking-water" value="">
+                  <input class="additional__toggle visually-hidden" id="drinking-water" type="checkbox" name="drinking-water" value="">
+                  <label class="additional__title" for="drinking-water">
                     <span class="additional__description">питьевая вода</span>
                   </label>
                 </li>
                 <li class="additional__item">
-                  <label class="additional__title">
-                    <input class="additional__toggle visually-hidden" type="checkbox" name="milk" value="">
+                  <input class="additional__toggle visually-hidden" id="milk" type="checkbox" name="milk" value="">
+                  <label class="additional__title" for="milk">
                     <span class="additional__description">молоко</span>
                   </label>
                 </li>
                 <li class="additional__item">
-                  <label class="additional__title">
-                    <input class="additional__toggle visually-hidden" type="checkbox" name="vitamins" value="">
+                  <input class="additional__toggle visually-hidden" id="vitamins" type="checkbox" name="vitamins" value="">
+                  <label class="additional__title" for="vitamins">
                     <span class="additional__description">витамины</span>
                   </label>
                 </li>
@@ -163,7 +163,11 @@
           </section>
           <div class="program__footer">
             <div class="program__footer-inner center-x">
-              <button class="button program__request" type="submit" aria-label="Отправить заявку на подбор программы">отправить заявку</button>
+              <button class="button program__request" type="submit" aria-label="Отправить заявку на подбор программы">
+                <span class="button__text">
+                  отправить заявку
+                </span>
+              </button>
               <p class="program__note">* — Обязательные поля</p>
             </div>
           </div>
@@ -199,7 +203,7 @@
         <div class="page-footer__logos-wrapper center-x">
           <div class="footer-logo">
             <a class="footer-logo__link" href="index.html" aria-label="Логотип Кэт энерджи в виде надписи">
-              <svg width="128" height="24">
+              <svg class="footer-logo__graphics" width="128" height="24">
                 <use xlink:href="img/svg-sprite.svg#footer-logo"></use>
               </svg>
             </a>
