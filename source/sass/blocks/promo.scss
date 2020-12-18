@@ -5,8 +5,7 @@
     linear-gradient($basic-green-op-085 63%, $basic-white 63%),
     url("../img/index-background-desktop.png"),
     linear-gradient($basic-green 63%, $basic-white 63%);
-  background-repeat:
-    no-repeat;
+  background-repeat: no-repeat;
   background-position-x: center;
 
   @media (min-resolution: 2dppx) {
@@ -14,8 +13,7 @@
       linear-gradient($basic-green-op-085 63%, $basic-white 63%),
       url("../img/index-background-desktop@2x.png"),
       linear-gradient($basic-green 63%, $basic-white 63%);
-    background-repeat:
-      no-repeat;
+    background-repeat: no-repeat;
     background-position-x: center;
     background-size:
       auto,

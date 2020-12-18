@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px){
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .page-header__logo-graphics--mobile,
   .page-header__logo-graphics--desktop {
     display: none;

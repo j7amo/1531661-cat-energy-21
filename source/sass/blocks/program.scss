@@ -232,6 +232,7 @@
   &:disabled {
     & + .program__value {
       opacity: 0.3;
+
       &::before {
         border: 1px solid $special-grey-4;
       }

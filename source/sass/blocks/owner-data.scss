@@ -87,7 +87,7 @@
   }
 }
 
-.owner-data__item:nth-child(1) .owner-data__description{
+.owner-data__item:nth-child(1) .owner-data__description {
   @media (min-width: $tablet-width) {
     margin-right: 20px;
   }
@@ -97,7 +97,7 @@
   }
 }
 
-.owner-data__item:nth-child(1) .owner-data__field{
+.owner-data__item:nth-child(1) .owner-data__field {
   @media (min-width: $tablet-width) {
     padding-left: 20px;
   }
@@ -107,13 +107,13 @@
   }
 }
 
-.owner-data__item:nth-child(2) .owner-data__description{
+.owner-data__item:nth-child(2) .owner-data__description {
   @media (min-width: $tablet-width) {
     margin-right: 14px;
   }
 }
 
-.owner-data__item:nth-child(2) .owner-data__field{
+.owner-data__item:nth-child(2) .owner-data__field {
   @media (min-width: $tablet-width) {
     padding-left: 19px;
   }
@@ -200,9 +200,11 @@
     &::-webkit-input-placeholder {
       transform: translateX(-1px);
     }
+
     &::placeholder {
       transform: translateX(-1px);
     }
+
     &:-ms-input-placeholder {
       transform: translateX(-1px);
     }
