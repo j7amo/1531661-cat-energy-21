@@ -18,3 +18,13 @@
   height: 24px;
   margin: 0 auto;
 }
+
+.footer-logo__graphics {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

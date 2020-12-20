@@ -22,16 +22,24 @@
   @media (min-width: $desktop-width) {
     margin-left: 80px;
   }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+}
+
+.button:active .button__text {
+  opacity: 0.3;
 }
 
 .button--order {
   margin-left: 0;
   width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
     height: 39px;
   }
 }
@@ -49,6 +57,14 @@
 
   @media (min-width: $tablet-width) {
     height: 40px;
+  }
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active .button__text {
+    opacity: 0.3;
   }
 }
 
@@ -76,10 +92,11 @@
     width: 282px;
     height: 52px;
     margin-left: 0;
-    margin-right: 61px;
+    margin-right: 62px;
   }
 
   @media (min-width: $desktop-width) {
     width: 568px;
+    margin-right: 82px;
   }
 }

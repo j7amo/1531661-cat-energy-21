@@ -1,13 +1,13 @@
 .owner-data {
-  margin-bottom: 27px;
+  margin-bottom: 35px;
   border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 85px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
     width: 100%;
   }
 }
@@ -36,13 +36,13 @@
   width: 221px;
   padding-left: 20px;
   transform: translateY(-17px) translateX(-20px);
-  margin: 0 0 31px 0;
+  margin: 0 0 17px 0;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
+    margin-bottom: 36px;
 
     width: 593px;
     padding-left: 40px;
@@ -53,10 +53,14 @@
 .owner-data__inner-flex {
   @media (min-width: $desktop-width) {
     display: flex;
+    margin-bottom: 20px;
   }
 }
 
 .owner-data__item {
+  display: flex;
+  align-items: center;
+  position: relative;
   min-height: 45px;
 
   padding: 0;
@@ -72,6 +76,8 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    width: 570px;
+    margin-bottom: 0;
   }
 
   &:first-child {
@@ -81,9 +87,40 @@
   }
 }
 
+.owner-data__item:nth-child(1) .owner-data__description {
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 22px;
+  }
+}
+
+.owner-data__item:nth-child(1) .owner-data__field {
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
+  }
+}
+
+.owner-data__item:nth-child(2) .owner-data__description {
+  @media (min-width: $tablet-width) {
+    margin-right: 14px;
+  }
+}
+
+.owner-data__item:nth-child(2) .owner-data__field {
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
+  }
+}
+
 .owner-data__title {
-  display: flex;
-  position: relative;
+  order: 0;
   align-items: center;
 }
 
@@ -94,19 +131,29 @@
   right: 15px;
   width: 20px;
   height: 14px;
-  background-image: url("../img/icon_email.svg");
+  background-image: url("../img/icon-email.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 17px;
+  }
 }
 
 .owner-data__title--tel::before {
   content: "";
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 13px;
+  right: 13px;
   width: 20px;
   height: 20px;
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 16px;
+  }
 }
 
 .owner-data__description {
@@ -116,11 +163,13 @@
   color: $special-dark-grey;
 
   margin-right: 10px;
+  padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 2px;
   }
 }
 
@@ -130,13 +179,45 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   min-height: 46px;
   width: 100px;
+  order: 1;
   flex-grow: 1;
 
   padding-left: 15px;
   margin: 0;
   border: 1px solid $basic-grey-4;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+
+    &::-webkit-input-placeholder {
+      transform: translateX(-1px);
+    }
+
+    &::placeholder {
+      transform: translateX(-1px);
+    }
+
+    &:-ms-input-placeholder {
+      transform: translateX(-1px);
+    }
+  }
+
+  &:disabled {
+    border: 2px solid $special-dark-grey;
+    background-color: $basic-white;
+  }
+
+  &--error {
+    border: 2px solid $status-error;
+  }
 
   &::-webkit-input-placeholder {
     font-family: "Oswald", "Arial", sans-serif;
@@ -192,5 +273,29 @@
     font-size: 20px;
     line-height: 30px;
     min-height: 52px;
+  }
+}
+
+.owner-data__field--email {
+  &:disabled ~ .owner-data__title--email::before {
+    background-image: url("../img/icon-email-disabled.svg");
+    background-repeat: no-repeat;
+  }
+
+  &-error ~ .owner-data__title--email::before {
+    background-image: url("../img/icon-email-error.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.owner-data__field--tel {
+  &:disabled ~ .owner-data__title--tel::before {
+    background-image: url("../img/icon-phone-disabled.svg");
+    background-repeat: no-repeat;
+  }
+
+  &-error ~ .owner-data__title--tel::before {
+    background-image: url("../img/icon-phone-error.svg");
+    background-repeat: no-repeat;
   }
 }

@@ -1,6 +1,6 @@
 .cat-data {
   border-bottom: 1px solid $basic-grey-1;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     width: 569px;
     margin-right: 80px;
-    margin-bottom: 67px;
+    margin-bottom: 0;
   }
 }
 
@@ -60,14 +60,26 @@
 
 .cat-data__item:nth-child(2) .cat-data__field-name {
   margin-right: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
 }
 
 .cat-data__item:nth-child(3) .cat-data__field-name {
   margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
 }
 
 .cat-data__item:nth-child(4) .cat-data__field-name {
   margin-right: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .cat-data__field-value {
@@ -83,6 +95,31 @@
   padding-left: 15px;
   margin: 0;
   border: 1px solid $basic-grey-4;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+
+    &::-webkit-input-placeholder {
+      transform: translateX(-1px);
+    }
+
+    &::placeholder {
+      transform: translateX(-1px);
+    }
+
+    &:-ms-input-placeholder {
+      transform: translateX(-1px);
+    }
+  }
+
+  &--error {
+    border: 2px solid $status-error;
+  }
 
   &::-webkit-input-placeholder {
     font-family: "Oswald", "Arial", sans-serif;
@@ -138,5 +175,6 @@
     font-size: 20px;
     line-height: 30px;
     min-height: 52px;
+    padding-left: 17px;
   }
 }

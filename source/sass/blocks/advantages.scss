@@ -51,6 +51,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 75px;
   }
 }
 
@@ -70,6 +71,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 37px;
 
     width: 249px;
     min-height: 280px;
@@ -94,6 +96,7 @@
   z-index: 2;
 
   padding: 0;
+  padding-top: 2px;
   margin: 0;
 }
 
@@ -149,7 +152,7 @@
     z-index: 1;
     content: attr(data-num);
     top: 0;
-    left: 118px;
+    left: 114px;
 
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
@@ -157,5 +160,11 @@
     font-size: 280px;
     line-height: 280px;
     color: $basic-grey;
+  }
+}
+
+.advantages__linebreak {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
