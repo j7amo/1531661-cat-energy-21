@@ -29,6 +29,10 @@
   margin: 0 0 12px 20px;
   display: inline-block;
 
+  &:focus {
+    opacity: 0.8;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }

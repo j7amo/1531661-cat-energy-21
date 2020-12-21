@@ -21,6 +21,10 @@
     fill: $basic-green;
   }
 
+  &:focus .copyright__logo {
+    fill: $basic-green;
+  }
+
   &:active {
     opacity: 0.3;
   }

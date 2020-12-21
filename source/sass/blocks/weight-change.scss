@@ -215,6 +215,10 @@
     background-image: url("../img/arrow-long.svg");
   }
 
+  &:focus::after {
+    background-image: url("../img/arrow-long.svg");
+  }
+
   &:active {
     opacity: 0.3;
   }
