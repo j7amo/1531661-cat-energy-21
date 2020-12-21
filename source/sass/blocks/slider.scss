@@ -62,12 +62,6 @@
   }
 }
 
-.slider__toggle {
-  &:checked {
-
-  }
-}
-
 .slider__toggles-inner--mobile {
   display: flex;
   justify-content: space-around;
@@ -84,14 +78,6 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-
-  &--before {
-    order: 0;
-  }
-
-  &--after {
-    order: 2;
-  }
 }
 
 .slider__toggles--tablet {
@@ -114,7 +100,6 @@
 }
 
 .slider__track {
-  order: 1;
   position: relative;
   cursor: pointer;
   width: 84px;
