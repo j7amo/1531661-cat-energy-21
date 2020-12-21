@@ -78,6 +78,26 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover .slider__legend {
+    border-bottom: 2px solid $special-grey-3;
+    transform: translateY(1px);
+  }
+
+  &:focus {
+    outline: none;
+    & > .slider__legend {
+      border-bottom: 2px solid $special-grey-3;
+      transform: translateY(1px);
+    }
+  }
+
+  &:active {
+    & > .slider__legend {
+      border-bottom: none;
+      transform: translateY(0);
+    }
+  }
 }
 
 .slider__toggles--tablet {
