@@ -21,6 +21,20 @@ let showItemAfter = function () {
   itemAfter.classList.add("shown");
 };
 
+hiddenCheckbox.addEventListener('change', function() {
+  if (hiddenCheckbox.checked) {
+    itemAfter.classList.remove("shown");
+    itemAfter.classList.add("hidden");
+    itemBefore.classList.remove("hidden");
+    itemBefore.classList.add("shown");
+  } else {
+    itemBefore.classList.remove("shown");
+    itemBefore.classList.add("hidden");
+    itemAfter.classList.remove("hidden");
+    itemAfter.classList.add("shown");
+  }
+});
+
 beforeToggle.addEventListener('click', function() {
   showItemBefore();
 });
@@ -31,7 +45,7 @@ afterToggle.addEventListener('click', function() {
 
 beforeAfterToggle.addEventListener('click', function() {
   if (hiddenCheckbox.checked) {
-    showItemAfter()
+    showItemAfter();
   } else {
     showItemBefore();
   }
