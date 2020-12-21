@@ -26,6 +26,10 @@
   &:hover {
     background-color: $basic-green-2;
   }
+
+  &:focus {
+    background-color: $basic-green-2;
+  }
 }
 
 .button:active .button__text {
@@ -60,6 +64,10 @@
   }
 
   &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:focus {
     background-color: $special-grey-2;
   }
 

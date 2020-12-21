@@ -17,6 +17,10 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
+
+  &:focus .footer-logo__graphics {
+    opacity: 0.8;
+  }
 }
 
 .footer-logo__graphics {

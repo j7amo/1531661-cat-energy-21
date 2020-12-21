@@ -43,6 +43,14 @@
       padding-bottom: 4px;
     }
   }
+
+  &:focus .socials__network {
+    fill: $basic-green;
+  }
+
+  &:focus .socials__network--facebook {
+    stroke: $basic-green;
+  }
 }
 
 .socials__network {
