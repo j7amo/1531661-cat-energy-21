@@ -151,8 +151,8 @@
               </ul>
               <div class="results__toggles-wrapper">
                 <div class="results__toggles slider__toggles slider__toggles--mobile">
-                  <input type="checkbox" class="slider__toggle visually-hidden" id="before-after" checked>
-                  <label class="visually-hidden" for="before-after">Интерактивный переключатель изображений внешнего вида кота до и после участия в программе по коррекции веса</label>
+                  <input type="checkbox" class="slider__toggle visually-hidden" id="before-after-toggle" checked>
+                  <label class="visually-hidden" for="before-after-toggle">Интерактивный переключатель изображений внешнего вида кота до и после участия в программе по коррекции веса</label>
                   <div class="slider__toggles-inner slider__toggles-inner--mobile">
                     <button class="slider__legend-button slider__legend-button--before" type="button" aria-label="Нажмите, чтобы показать кота до участия в программе по коррекции веса">
                       <span class="results__legend results__legend--before slider__legend">
@@ -167,15 +167,20 @@
                     </button>
                   </div>
                 </div>
-                <label class="results__toggles slider__toggles slider__toggles--tablet">
-                  <input type="range" min="0" max="100" value="50" class="results__range slider__range" oninput="moveSlider()">
-                  <span class="results__legend results__legend--before slider__legend">
-                    Было
-                  </span>
-                  <span class="results__legend results__legend--after slider__legend">
-                    Стало
-                  </span>
-                </label>
+                <div class="results__toggles slider__toggles slider__toggles--tablet">
+                  <label class="visually-hidden" for="before-after-range-slider">Интерактивный переключатель изображений внешнего вида кота до и после участия в программе по коррекции веса</label>
+                  <button class="slider__legend-button slider__legend-button--before" type="button" aria-label="Нажмите, чтобы показать кота до участия в программе по коррекции веса">
+                      <span class="results__legend results__legend--before slider__legend">
+                        Было
+                      </span>
+                  </button>
+                  <input type="range" min="0" max="100" value="50" class="results__range slider__range" oninput="moveSlider()" id="before-after-range-slider">
+                  <button class="slider__legend-button slider__legend-button--after" type="button" aria-label="Нажмите, чтобы показать кота после участия в программе по коррекции веса">
+                      <span class="results__legend results__legend--after slider__legend">
+                        Стало
+                      </span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>

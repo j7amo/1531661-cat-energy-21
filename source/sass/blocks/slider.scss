@@ -80,15 +80,23 @@
   cursor: pointer;
 
   &:hover .slider__legend {
-    border-bottom: 2px solid $special-grey-3;
+    border-bottom: 2px solid $basic-black-op-040;
     transform: translateY(1px);
+
+    @media (min-width: $tablet-width) {
+      transform: translateY(0);
+    }
   }
 
   &:focus {
     outline: none;
     & > .slider__legend {
-      border-bottom: 2px solid $special-grey-3;
+      border-bottom: 2px solid $basic-black-op-040;
       transform: translateY(1px);
+
+      @media (min-width: $tablet-width) {
+        transform: translateY(0);
+      }
     }
   }
 
@@ -167,7 +175,6 @@
 }
 
 .slider__range {
-  order: 1;
   width: 428px;
 
   appearance: none;
