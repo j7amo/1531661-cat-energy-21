@@ -5,7 +5,7 @@ menu.classList.add("hide");
 menuToggle.classList.remove("hide");
 menuToggle.classList.add("show");
 
-menuToggle.addEventListener('click', function(){
+menuToggle.addEventListener('change', function(){
   menu.classList.toggle("hide");
   menu.classList.toggle("show");
 });

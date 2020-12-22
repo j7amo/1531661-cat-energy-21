@@ -84,6 +84,12 @@
 }
 
 .slider__item--before img {
+  @media (max-width: $mobile-width-only) {
+    height: 232px;
+    width: 310px;
+    max-width: 310px;
+  }
+
   @media (min-width: $tablet-width) {
     object-position: 0;
   }
@@ -94,6 +100,8 @@
 }
 
 .slider__item--before {
+  left: -15px;
+  
   @media (min-width: $tablet-width) {
     top: 10px;
     left: 0;
