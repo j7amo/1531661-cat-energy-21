@@ -140,6 +140,7 @@
 
   &:focus {
     outline: none;
+
     & > .slider__legend {
       border-bottom: 2px solid $basic-black-op-040;
       transform: translateY(1px);
