@@ -223,16 +223,6 @@
   }
 }
 
-.results__photos-wrapper {
-  @media (min-width: $desktop-width) {
-    width: 50%;
-  }
-}
-
-.results__photo img {
-  min-height: 232px;
-  object-fit: cover;
-}
 
 .results__toggles-wrapper {
   display: flex;
@@ -273,6 +263,9 @@
 
 .results__legend {
   display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -283,7 +276,7 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 2px dotted $special-grey;
+    border-bottom: 2px dotted $basic-black-op-040;
   }
 }
 

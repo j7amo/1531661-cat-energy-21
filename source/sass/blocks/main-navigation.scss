@@ -14,11 +14,13 @@
 .main-navigation__toggle {
   position: absolute;
   top: -48px;
-  right: 20px;
+  right: 17px;
   width: 25px;
   height: 25px;
   font-size: 0;
+  appearance: none;
   background-color: transparent;
+  color: transparent;
   border: 0;
   cursor: pointer;
 
@@ -34,8 +36,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
-    left: 0;
+    top: 10px;
+    left: 1px;
     width: 25px;
     height: 1.5px;
     background-color: $basic-black;
@@ -43,10 +45,23 @@
 
   &::before {
     transform: rotate(45deg);
+    transition: all 0.5s;
   }
 
   &::after {
     transform: rotate(-45deg);
+    transition: all 0.5s;
+  }
+
+  &:checked {
+    &::before {
+      transform: rotate(0);
+      box-shadow: 0 8px 0 0 $basic-black;
+    }
+
+    &::after {
+      transform: rotate(0) translateY(-8px);
+    }
   }
 }
 
