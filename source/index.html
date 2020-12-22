@@ -130,20 +130,20 @@
               <ul class="results__photos slider__list list">
                 <li class="results__photo results__photo--after slider__item slider__item--after hidden">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop.webp 1x, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/after-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/after-desktop.png 1x, img/after-desktop@2x.png 2x">
+                    <source media="(min-width: 1440px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
                     <img src="img/after-mobile.png" srcset="img/after-mobile@2x.png 2x" alt="Очень стройный кот после завершения программы по снижению веса">
                   </picture>
                 </li>
                 <li class="results__photo results__photo--before slider__item slider__item--before shown">
                   <picture>
-                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop.webp 1x, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
                     <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
-                    <source media="(min-width: 1440px)" srcset="img/before-desktop.png 1x, img/before-desktop@2x.png 2x">
+                    <source media="(min-width: 1440px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
                     <img src="img/before-mobile.png" srcset="img/before-mobile@2x.png 2x" alt="Очень толстый кот перед началом программы по снижению веса">
                   </picture>
@@ -154,13 +154,13 @@
                   <input type="checkbox" class="slider__toggle visually-hidden" id="before-after-toggle" checked>
                   <label class="visually-hidden" for="before-after-toggle">Интерактивный переключатель изображений внешнего вида кота до и после участия в программе по коррекции веса</label>
                   <div class="slider__toggles-inner slider__toggles-inner--mobile">
-                    <button class="slider__legend-button slider__legend-button--before" type="button" aria-label="Нажмите, чтобы показать кота до участия в программе по коррекции веса">
+                    <button class="slider__legend-button slider__legend-button--before slider__legend-button--before-mobile" type="button" aria-label="Нажмите, чтобы показать кота до участия в программе по коррекции веса">
                       <span class="results__legend results__legend--before slider__legend">
                         Было
                       </span>
                     </button>
                     <button class="slider__track" type="button" aria-label="Интерактивный переключатель изображений внешнего вида кота до и после участия в программе по коррекции веса"></button>
-                    <button class="slider__legend-button slider__legend-button--after" type="button" aria-label="Нажмите, чтобы показать кота после участия в программе по коррекции веса">
+                    <button class="slider__legend-button slider__legend-button--after slider__legend-button--after-mobile" type="button" aria-label="Нажмите, чтобы показать кота после участия в программе по коррекции веса">
                       <span class="results__legend results__legend--after slider__legend">
                         Стало
                       </span>
@@ -169,13 +169,13 @@
                 </div>
                 <div class="results__toggles slider__toggles slider__toggles--tablet">
                   <label class="visually-hidden" for="before-after-range-slider">Интерактивный переключатель изображений внешнего вида кота до и после участия в программе по коррекции веса</label>
-                  <button class="slider__legend-button slider__legend-button--before" type="button" aria-label="Нажмите, чтобы показать кота до участия в программе по коррекции веса">
+                  <button class="slider__legend-button slider__legend-button--before slider__legend-button--before-tablet" type="button" aria-label="Нажмите, чтобы показать кота до участия в программе по коррекции веса">
                       <span class="results__legend results__legend--before slider__legend">
                         Было
                       </span>
                   </button>
                   <input type="range" min="0" max="100" value="50" class="results__range slider__range" oninput="moveSlider()" id="before-after-range-slider">
-                  <button class="slider__legend-button slider__legend-button--after" type="button" aria-label="Нажмите, чтобы показать кота после участия в программе по коррекции веса">
+                  <button class="slider__legend-button slider__legend-button--after slider__legend-button--after-tablet" type="button" aria-label="Нажмите, чтобы показать кота после участия в программе по коррекции веса">
                       <span class="results__legend results__legend--after slider__legend">
                         Стало
                       </span>
@@ -256,5 +256,6 @@
       </section>
     </footer>
     <script src="js/mobile-slider.js"></script>
+    <script src="js/tablet-slider.js"></script>
   </body>
 </html>

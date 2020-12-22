@@ -223,16 +223,6 @@
   }
 }
 
-.results__photos-wrapper {
-  @media (min-width: $desktop-width) {
-    width: 50%;
-  }
-}
-
-/*.results__photo img {
-  min-height: 232px;
-  object-fit: cover;
-}*/
 
 .results__toggles-wrapper {
   display: flex;
