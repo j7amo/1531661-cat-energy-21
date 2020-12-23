@@ -8,6 +8,7 @@
   text-align: center;
   width: 100%;
   min-height: 40px;
+  max-height: 100px;
   padding: 10px;
   color: $basic-white;
   background-color: $basic-green;
@@ -31,6 +32,13 @@
 
   &:focus {
     background-color: $basic-green-2;
+  }
+}
+
+.button__text {
+  @media (max-width: $mobile-width-only) {
+    max-height: 90px;
+    overflow: hidden;
   }
 }
 

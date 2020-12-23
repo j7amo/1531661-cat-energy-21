@@ -2,17 +2,17 @@
   position: relative;
 
   background:
-    linear-gradient($basic-green-op-085 63%, $basic-white 63%),
+    linear-gradient($basic-green-op-085 302px, $basic-white 302px),
     url("../img/index-background-desktop.png"),
-    linear-gradient($basic-green 63%, $basic-white 63%);
+    linear-gradient($basic-green 302px, $basic-white 302px);
   background-repeat: no-repeat;
   background-position-x: center;
 
   @media (min-resolution: 2dppx) {
     background:
-      linear-gradient($basic-green-op-085 63%, $basic-white 63%),
+      linear-gradient($basic-green-op-085 302px, $basic-white 302px),
       url("../img/index-background-desktop@2x.png"),
-      linear-gradient($basic-green 63%, $basic-white 63%);
+      linear-gradient($basic-green 302px, $basic-white 302px);
     background-repeat: no-repeat;
     background-position-x: center;
     background-size:
@@ -81,6 +81,11 @@
   margin: 0;
   padding: 0;
 
+  @media (max-width: $mobile-width-only) {
+    max-height: 150px;
+    overflow: hidden;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 60px;
@@ -109,6 +114,11 @@
   color: $basic-white;
   margin: 20px 0 297px 0;
   padding: 5px 20px;
+
+  @media (max-width: $mobile-width-only) {
+    max-height: 75px;
+    overflow: hidden;
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
