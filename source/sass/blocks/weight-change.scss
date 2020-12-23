@@ -8,15 +8,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 374px;
     margin-bottom: 56px;
   }
 }
 
 .weight-change__list {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
@@ -43,12 +43,6 @@
     margin: 0;
 
     flex-grow: 1;
-  }
-}
-
-.weight-change__item:first-child {
-  @media (min-width: $desktop-width) {
-    margin-right: 80px;
   }
 }
 
