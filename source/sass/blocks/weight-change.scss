@@ -65,6 +65,7 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
+    max-width: 400px;
     margin: 0;
     padding-left: 0;
   }
@@ -194,7 +195,6 @@
   &::after {
     position: absolute;
     content: "";
-    /*top: 2px;*/
     right: -50px;
     width: 32px;
     height: 10px;
@@ -202,7 +202,6 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 10px;
       right: -60px;
     }
 
