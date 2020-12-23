@@ -122,10 +122,9 @@
 
 .slider__toggles-inner--mobile {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  width: 220px;
-  height: 37px;
+  min-height: 37px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -136,6 +135,17 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  min-width: 90px;
+
+  &--before-mobile {
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  &--after-mobile {
+    display: inline-flex;
+    justify-content: flex-start;
+  }
 
   &:hover .slider__legend {
     border-bottom: 2px solid $basic-black-op-040;
@@ -189,8 +199,9 @@
 .slider__track {
   position: relative;
   cursor: pointer;
-  width: 84px;
+  min-width: 84px;
   height: 14px;
+  margin: 0 8px;
 
   background-color: #ffffff;
   border-radius: 6px;

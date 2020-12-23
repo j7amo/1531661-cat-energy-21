@@ -124,7 +124,7 @@
 .results__list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet-width) {
     width: 366px;
@@ -137,12 +137,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  border: 1px solid $special-grey;
-  border-radius: 5px;
-
   width: 124px;
-  height: 56px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -154,10 +149,15 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
+  width: 124px;
   color: $basic-black;
   text-transform: uppercase;
+  padding: 14px 10px 16px;
+  flex-grow: 1;
+  overflow: hidden;
 
-  padding-top: 14px;
+  border: 1px solid $special-grey;
+  border-radius: 5px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -173,15 +173,16 @@
 }
 
 .results__description {
+  position: relative;
   width: 87px;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $special-dark-grey;
   background-color: $basic-grey-2;
-
+  overflow: hidden;
   padding: 0 5px;
-  margin: 9px 0 0 0;
+  margin: -10px 0 0 0;
 
   @media (min-width: $tablet-width) {
     width: 127px;
@@ -229,7 +230,7 @@
   justify-content: center;
   align-items: center;
   width: 280px;
-  height: 66px;
+  min-height: 66px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -245,11 +246,11 @@
 }
 
 .results__toggles {
-  min-width: 228px;
+  width: 100%;
   min-height: 40px;
 
-  margin: 0 0 0 0;
-  padding: 0 10px 0;
+  margin: 0;
+  padding: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -269,33 +270,35 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  max-width: 100%;
+  overflow: hidden;
 
   color: $basic-black;
+
+  &--before {
+    order: 0;
+    margin-left: 4px;
+    margin-right: 5px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 12px;
+      margin-left: 0;
+    }
+  }
+
+  &--after {
+    order: 2;
+    margin-left: 3px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 6px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
     border-bottom: 2px dotted $basic-black-op-040;
-  }
-}
-
-.results__legend--before {
-  order: 0;
-  margin-left: 4px;
-  margin-right: 5px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 12px;
-    margin-left: 0;
-  }
-}
-
-.results__legend--after {
-  order: 2;
-  margin-left: 3px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 6px;
   }
 }
