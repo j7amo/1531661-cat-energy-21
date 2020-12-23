@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     width: 244px;
     min-height: 54px;
+    max-height: 180px;
     font-size: 20px;
     margin-left: 83px;
   }
@@ -36,9 +37,11 @@
 }
 
 .button__text {
-  @media (max-width: $mobile-width-only) {
-    max-height: 90px;
-    overflow: hidden;
+  max-height: 90px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    max-height: 127px;
   }
 }
 

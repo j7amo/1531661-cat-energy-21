@@ -91,9 +91,12 @@
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
+    max-height: 300px;
+    overflow: hidden;
 
     width: 530px;
-    margin: 0 0 36px 87px;
+    margin: 0 0 30px 87px;
+    padding-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,6 +128,8 @@
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
+    max-height: 200px;
+    overflow: hidden;
 
     width: 530px;
     margin: 0 0 44px 68px;
