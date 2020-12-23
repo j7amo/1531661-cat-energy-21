@@ -61,6 +61,7 @@
     line-height: 36px;
     max-width: 400px;
     margin: 0;
+    margin-bottom: 25px;
     padding-left: 0;
   }
 
@@ -68,7 +69,8 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 0 162px;
+    margin: 0 0 73px 162px;
+    padding-right: 0;
   }
 }
 
@@ -145,7 +147,6 @@
     color: $basic-black;
     width: 377px;
     padding-right: 3px;
-    margin-top: 25px;
     margin-bottom: 31px;
     border-bottom: none;
   }
@@ -154,7 +155,6 @@
     width: 467px;
     min-height: 72px;
     padding-right: 2px;
-    margin-top: 73px;
     margin-bottom: 6px;
   }
 
@@ -176,6 +176,7 @@
   font-size: 16px;
   line-height: 16px;
   padding-left: 1px;
+  margin-top: auto;
   text-transform: uppercase;
   color: $basic-black;
   max-width: 200px;
@@ -196,11 +197,6 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      right: -60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 10px;
       right: -60px;
     }
   }
