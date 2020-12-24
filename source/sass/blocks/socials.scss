@@ -14,35 +14,18 @@
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 21px;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-left: 27px;
+    padding-bottom: 4px;
+    width: 159px;
   }
 }
 
 .socials__button {
   display: inline-flex;
-
-  &:nth-child(1) {
-    @media (min-width: $tablet-width) {
-      padding-left: 12px;
-      padding-bottom: 4px;
-    }
-  }
-
-  &:nth-child(2) {
-    @media (min-width: $tablet-width) {
-      margin-left: 26px;
-      padding-bottom: 1px;
-    }
-  }
-
-  &:nth-child(3) {
-    @media (min-width: $tablet-width) {
-      margin-left: 21px;
-      padding-bottom: 4px;
-    }
-  }
 
   &:focus .socials__network {
     fill: $basic-green;
