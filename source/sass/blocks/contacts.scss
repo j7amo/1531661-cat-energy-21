@@ -75,6 +75,8 @@
   @media (min-width: $desktop-width) {
     min-height: 84px;
     padding-top: 3px;
+    max-width: 200px;
+    max-height: 150px;
   }
 }
 
@@ -100,6 +102,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    max-width: 155px;
+    max-height: 150px;
   }
 }
 
