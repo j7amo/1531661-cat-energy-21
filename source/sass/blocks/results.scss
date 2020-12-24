@@ -244,7 +244,8 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    align-items: flex-start;
+    align-items: center;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {

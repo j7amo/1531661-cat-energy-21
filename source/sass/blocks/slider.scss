@@ -127,7 +127,6 @@
   justify-items: center;
   align-items: center;
   min-height: 38px;
-  margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -136,6 +135,10 @@
 
 .slider__legend {
   border-bottom: 2px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px dotted $basic-black-op-040;
+  }
 }
 
 .slider__legend-button {
@@ -147,11 +150,17 @@
   max-width: 82px;
   overflow: hidden;
 
-  &--before-mobile {
+  &--before-mobile,
+  &--before-tablet {
     justify-self: flex-end;
   }
 
-  &--after-mobile {
+  &--before-tablet {
+    margin-right: 5px;
+  }
+
+  &--after-mobile,
+  &--after-tablet {
     justify-self: flex-start;
   }
 
@@ -174,13 +183,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 11px;
+    max-width: 110px;
   }
 }
 
 .slider__toggles--tablet {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 428px 1fr;
+  grid-column-gap: 18px;
+  justify-items: center;
+  align-items: center;
+  min-height: 38px;
   cursor: pointer;
 
   @media (min-width: $desktop-width) {
@@ -247,10 +260,6 @@
   height: 6px;
   background-color: $basic-grey-5;
   border-radius: 6px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 26px;
-  }
 
   &:hover ~ .slider__legend {
     border-bottom: 2px solid $special-grey-3;
