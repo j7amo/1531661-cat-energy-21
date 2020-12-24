@@ -121,39 +121,42 @@
 }
 
 .slider__toggles-inner--mobile {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 83px 1fr;
+  grid-column-gap: 16px;
+  justify-items: center;
   align-items: center;
-  min-height: 37px;
+  min-height: 38px;
+  margin-bottom: -1px;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.slider__legend {
+  border-bottom: 2px solid transparent;
+}
+
 .slider__legend-button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  min-width: 90px;
+  padding-left: 2px;
+  padding-right: 2px;
+  max-width: 82px;
+  overflow: hidden;
 
   &--before-mobile {
-    display: inline-flex;
-    justify-content: flex-end;
+    justify-self: flex-end;
   }
 
   &--after-mobile {
-    display: inline-flex;
-    justify-content: flex-start;
+    justify-self: flex-start;
   }
 
   &:hover .slider__legend {
     border-bottom: 2px solid $basic-black-op-040;
-    transform: translateY(1px);
-
-    @media (min-width: $tablet-width) {
-      transform: translateY(0);
-    }
   }
 
   &:focus {
@@ -161,29 +164,24 @@
 
     & > .slider__legend {
       border-bottom: 2px solid $basic-black-op-040;
-      transform: translateY(1px);
-
-      @media (min-width: $tablet-width) {
-        transform: translateY(0);
-      }
     }
   }
 
   &:active {
     & > .slider__legend {
-      border-bottom: none;
-      transform: translateY(0);
+      border-bottom: 2px solid transparent;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
   }
 }
 
 .slider__toggles--tablet {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   cursor: pointer;
-  width: 607px;
-  height: 32px;
-  margin-bottom: 23px;
 
   @media (min-width: $desktop-width) {
     width: 596px;
@@ -201,8 +199,6 @@
   cursor: pointer;
   min-width: 84px;
   height: 14px;
-  margin: 0 8px;
-
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid $special-grey;
@@ -245,7 +241,7 @@
 }
 
 .slider__range {
-  width: 428px;
+  min-width: 428px;
 
   appearance: none;
   height: 6px;
@@ -253,7 +249,7 @@
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
+    margin-top: 26px;
   }
 
   &:hover ~ .slider__legend {
