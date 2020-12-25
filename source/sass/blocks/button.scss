@@ -38,6 +38,7 @@
 
 .button__text {
   max-height: 90px;
+  max-width: 70vw;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {

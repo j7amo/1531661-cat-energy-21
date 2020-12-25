@@ -33,11 +33,13 @@
   line-height: 26px;
   color: $basic-black;
   background-color: $basic-white;
-  width: 162px;
+  max-width: 162px;
   padding-left: 20px;
+  padding-bottom: 3px;
+  overflow: hidden;
   transform: translateY(-17px) translateX(-20px);
   display: block;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;

@@ -33,10 +33,12 @@
   color: $basic-black;
   min-height: 52px;
   background-color: $basic-white;
-  width: 221px;
+  max-width: 221px;
   padding-left: 20px;
   transform: translateY(-17px) translateX(-20px);
-  margin: 0 0 17px 0;
+  margin: 0 0 14px 0;
+  padding-bottom: 3px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -62,7 +64,7 @@
   align-items: center;
   position: relative;
   min-height: 45px;
-
+  max-width: 87.5vw;
   padding: 0;
   margin: 0 0 14px 0;
 
@@ -120,14 +122,18 @@
 }
 
 .owner-data__title {
+  display: inline-flex;
   order: 0;
   align-items: center;
+  margin-bottom: 8px;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
 .owner-data__title--email::before {
   content: "";
   position: absolute;
-  top: 16px;
+  margin-top: 8px;
   right: 15px;
   width: 20px;
   height: 14px;
@@ -143,7 +149,7 @@
 .owner-data__title--tel::before {
   content: "";
   position: absolute;
-  top: 13px;
+  margin-top: 6px;
   right: 13px;
   width: 20px;
   height: 20px;
@@ -161,9 +167,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
-
-  margin-right: 10px;
-  padding-bottom: 8px;
+  max-width: 30vw;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -184,8 +188,8 @@
   width: 100px;
   order: 1;
   flex-grow: 1;
-
   padding-left: 15px;
+  padding-right: 40px;
   margin: 0;
   border: 1px solid $basic-grey-4;
 
@@ -277,6 +281,8 @@
 }
 
 .owner-data__field--email {
+  min-width: 220px;
+
   &:disabled ~ .owner-data__title--email::before {
     background-image: url("../img/icon-email-disabled.svg");
     background-repeat: no-repeat;
@@ -289,6 +295,8 @@
 }
 
 .owner-data__field--tel {
+  min-width: 204px;
+
   &:disabled ~ .owner-data__title--tel::before {
     background-image: url("../img/icon-phone-disabled.svg");
     background-repeat: no-repeat;
