@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 87px;
     width: 100%;
   }
 }
@@ -46,16 +46,18 @@
     line-height: 36px;
     margin-bottom: 36px;
 
-    width: 593px;
+    max-width: 593px;
     padding-left: 40px;
     transform: translateY(-23px) translateX(-40px);
   }
 }
 
-.owner-data__inner-flex {
+.owner-data__inner-grid {
   @media (min-width: $desktop-width) {
-    display: flex;
-    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 78px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -78,46 +80,7 @@
 
   @media (min-width: $desktop-width) {
     flex-grow: 1;
-    width: 570px;
     margin-bottom: 0;
-  }
-
-  &:first-child {
-    @media (min-width: $desktop-width) {
-      margin-right: 78px;
-    }
-  }
-}
-
-.owner-data__item:nth-child(1) .owner-data__description {
-  @media (min-width: $tablet-width) {
-    margin-right: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 22px;
-  }
-}
-
-.owner-data__item:nth-child(1) .owner-data__field {
-  @media (min-width: $tablet-width) {
-    padding-left: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 18px;
-  }
-}
-
-.owner-data__item:nth-child(2) .owner-data__description {
-  @media (min-width: $tablet-width) {
-    margin-right: 14px;
-  }
-}
-
-.owner-data__item:nth-child(2) .owner-data__field {
-  @media (min-width: $tablet-width) {
-    padding-left: 19px;
   }
 }
 
@@ -128,21 +91,33 @@
   margin-bottom: 8px;
   margin-right: 10px;
   overflow: hidden;
-}
-
-.owner-data__title--email::before {
-  content: "";
-  position: absolute;
-  margin-top: 8px;
-  right: 15px;
-  width: 20px;
-  height: 14px;
-  background-image: url("../img/icon-email.svg");
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 18px;
-    right: 17px;
+    margin-bottom: 0;
+    margin-right: 14px;
+  }
+}
+
+.owner-data__title--email {
+  &::before {
+    content: "";
+    position: absolute;
+    margin-top: 8px;
+    right: 15px;
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      right: 17px;
+      padding-right: 6px;
+      margin-top: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 5px;
   }
 }
 
@@ -157,8 +132,8 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 16px;
     right: 16px;
+    margin-top: 0;
   }
 }
 
@@ -174,6 +149,10 @@
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 15vw;
   }
 }
 
@@ -292,6 +271,10 @@
     background-image: url("../img/icon-email-error.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
 }
 
 .owner-data__field--tel {
@@ -305,5 +288,9 @@
   &-error ~ .owner-data__title--tel::before {
     background-image: url("../img/icon-phone-error.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 19px;
   }
 }

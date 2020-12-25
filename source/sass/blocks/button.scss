@@ -41,8 +41,8 @@
   max-width: 70vw;
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
-    max-height: 127px;
+  @media (min-width: $desktop-width) {
+    max-width: 30vw;
   }
 }
 
@@ -96,29 +96,5 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     height: 40px;
-  }
-}
-
-.program__request {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet-width) {
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    width: 282px;
-    height: 52px;
-    margin-left: 0;
-    margin-right: 62px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 568px;
-    margin-right: 82px;
   }
 }

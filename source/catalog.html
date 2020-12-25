@@ -22,9 +22,8 @@
             </svg>
           </a>
           <nav class="main-navigation">
-            <button class="main-navigation__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <input class="main-navigation__toggle hide" type="checkbox" id="show-hide-menu" checked>
+            <label class="visually-hidden" for="show-hide-menu">Нажмите, чтобы показать или скрыть меню</label>
             <ul class="main-navigation__list list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="index.html">Главная</a>
@@ -486,5 +485,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

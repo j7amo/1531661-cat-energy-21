@@ -44,17 +44,21 @@
   margin-top: 0;
   margin-bottom: 32px;
   padding-bottom: 5px;
-  max-width: 100vw;
+  max-width: 80vw;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-left: 39px;
+    margin-bottom: 42px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: auto;
+    margin-left: 0;
+    margin-bottom: 46px;
+    max-width: 100vw;
   }
 }
 
@@ -63,35 +67,26 @@
   line-height: 18px;
   text-transform: uppercase;
   min-height: 36px;
-  max-width: 100vw;
+  max-width: 80vw;
   overflow: hidden;
   color: $basic-black;
 
   padding-left: 20px;
-  padding-right: 30px;
+  padding-right: 10px;
   margin: 0 0 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 395px;
     padding-left: 70px;
     padding-right: 2px;
-    margin-top: 52px;
     margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
     margin-bottom: 66px;
     padding-left: 0;
     width: 100%;
-  }
-}
-
-.program__instructions-linebreak {
-  @media (max-width: $desktop-width - 1px) {
-    display: none;
   }
 }
 
@@ -157,7 +152,8 @@
   margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;
+    padding-top: 6px;
+    margin-bottom: 7px;
   }
 }
 
@@ -193,7 +189,6 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      top: -4px;
       width: 40px;
       height: 40px;
     }
@@ -209,7 +204,13 @@
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+    min-height: 40px;
+    max-width: 75vw;
     padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 35vw;
   }
 }
 
@@ -224,7 +225,6 @@
     border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      top: 7px;
       left: 11px;
       width: 18px;
       height: 18px;
@@ -264,6 +264,31 @@
   }
 }
 
+
+.program__request {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    width: 282px;
+    min-height: 52px;
+    margin-left: 0;
+    margin-right: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-right: 82px;
+  }
+}
+
 .program__note {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -278,9 +303,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     margin-top: 16px;
+    max-width: 40vw;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 18px;
+    max-width: 38vw;
   }
 }

@@ -61,23 +61,7 @@
   }
 }
 
-.cat-data__item:nth-child(2) .cat-data__field-name {
-  margin-right: 13px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 18px;
-  }
-}
-
-.cat-data__item:nth-child(3) .cat-data__field-name {
-  margin-right: 16px;
-
-  @media (min-width: $tablet-width) {
-    margin-right: 22px;
-  }
-}
-
-.cat-data__item:nth-child(4) .cat-data__field-name {
+.cat-data__field-name {
   margin-right: 14px;
 
   @media (min-width: $tablet-width) {
@@ -91,11 +75,13 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   min-height: 45px;
   min-width: 100px;
   flex-grow: 1;
 
   padding-left: 15px;
+  padding-right: 15px;
   margin: 0;
   border: 1px solid $basic-grey-4;
 
@@ -179,5 +165,10 @@
     line-height: 30px;
     min-height: 52px;
     padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 300px;
   }
 }

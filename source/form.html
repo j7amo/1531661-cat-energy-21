@@ -22,9 +22,8 @@
             </svg>
           </a>
           <nav class="main-navigation">
-            <button class="main-navigation__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <input class="main-navigation__toggle hide" type="checkbox" id="show-hide-menu" checked>
+            <label class="visually-hidden" for="show-hide-menu">Нажмите, чтобы показать или скрыть меню</label>
             <ul class="main-navigation__list list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="index.html">Главная</a>
@@ -102,7 +101,7 @@
           <section class="owner-data">
             <div class="owner-data__inner center-x">
               <h2 class="owner-data__main-title">Контактные данные (владельца кота)</h2>
-              <div class="owner-data__inner-flex">
+              <div class="owner-data__inner-grid">
                 <p class="owner-data__item">
                   <input class="owner-data__field owner-data__field--email" id="email-id" name="email" type="email" placeholder="kuklachev@gmail.com" required>
                   <label class="owner-data__title owner-data__title--email" for="email-id">
@@ -242,5 +241,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>
