@@ -36,10 +36,12 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-
+  padding-bottom: 6px;
   margin-top: 0;
-  margin-bottom: 41px;
+  margin-bottom: 35px;
   margin-left: 20px;
+  max-width: 82vw;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -250,19 +252,31 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-
-  width: 76px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
-
   margin: 0;
+  max-width: 35vw;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-    width: 150px;
     margin: 0 auto;
+  }
+}
+
+.goods__linebreak {
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 }
 
@@ -274,7 +288,6 @@
 .goods__stats-wrapper {
   display: flex;
   justify-content: space-between;
-  width: 142px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -292,7 +305,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
-
+  max-width: 47%;
+  overflow: hidden;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -304,6 +318,7 @@
 
 .goods__number {
   order: 1;
+  text-align: right;
 }
 
 .goods__stats-wrapper:first-child .goods__number {
@@ -340,7 +355,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special-black;
-
+  max-width: 88vw;
+  overflow: hidden;
   margin: 0 0 8px 0;
 
   @media (min-width: $tablet-width) {
@@ -383,7 +399,8 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
-
+  max-width: 88vw;
+  overflow: hidden;
   margin: 0 0 21px 0;
 
   @media (min-width: $tablet-width) {
@@ -403,9 +420,11 @@
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
-  width: 267px;
+  max-width: 267px;
+  overflow: hidden;
+  padding-bottom: 4px;
   padding-left: 20px;
-  margin: 28px 0 -9px;
+  margin: 28px 0 -13px;
   background-color: $basic-white;
   transform: translate(-20px, -44px);
 
@@ -452,6 +471,7 @@
 .goods__extra-item {
   padding: 12px 0 18px;
   border-bottom: 1px solid $special-grey;
+
 
   &:first-child {
     border-top: 1px solid $special-grey;
@@ -501,7 +521,8 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
-
+  max-width: 80vw;
+  overflow: hidden;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -514,7 +535,7 @@
   display: flex;
   justify-content: space-between;
 
-  margin: 0 0 15px 0;
+  margin: 0 0 13px 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 4px;
@@ -534,6 +555,9 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
+  padding-bottom: 2px;
+  max-width: 40vw;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -543,6 +567,7 @@
 
 .goods__extra-number {
   order: 1;
+  text-align: right;
 
   @media (min-width: $tablet-width) {
     min-width: 94px;
@@ -632,6 +657,10 @@
   line-height: 20px;
   text-align: center;
   margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 88vw;
+  overflow: hidden;
 
   color: $basic-white;
 

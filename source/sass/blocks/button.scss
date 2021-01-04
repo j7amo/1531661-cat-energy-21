@@ -8,7 +8,6 @@
   text-align: center;
   width: 100%;
   min-height: 40px;
-  max-height: 100px;
   padding: 10px;
   color: $basic-white;
   background-color: $basic-green;
@@ -37,7 +36,6 @@
 }
 
 .button__text {
-  max-height: 90px;
   max-width: 70vw;
   overflow: hidden;
 
@@ -68,8 +66,8 @@
   font-size: 16px;
   line-height: 20px;
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 0;
   width: 100%;
 
