@@ -3,7 +3,7 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 64px;
+    padding-top: 63px;
     padding-bottom: 76px;
   }
 
@@ -48,7 +48,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-left: 0;
-    margin-bottom: 81px;
+    margin-bottom: 76px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,7 +89,7 @@
 
   &:last-child {
     @media (min-width: $tablet-width) {
-      padding: 81px 0 0;
+      padding: 67px 0 0;
       background: none;
       background-color: $basic-white;
     }
@@ -101,10 +101,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    min-width: 324px;
-    min-height: 511px;
-    background: linear-gradient($basic-white 16%, $basic-grey 16%);
+    background: linear-gradient($basic-white 81px, $basic-grey 81px);
     padding: 0 36px 40px;
+    min-height: 510px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -263,6 +264,7 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0 auto;
+    max-width: 30vw;
   }
 }
 
@@ -291,7 +293,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    max-width: 33vw;
     border-bottom: 1px solid $special-grey;
     padding-top: 6px;
     padding-bottom: 8px;
@@ -329,6 +331,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 3px;
     padding-right: 1px;
+    margin-top: auto;
   }
 }
 
@@ -339,9 +342,12 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 428px;
+    min-height: 431px;
     border: 2px solid $basic-grey;
-    padding: 159px 35px 36px 36px;
+    padding: 159px 35px 38px 36px;
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -362,7 +368,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
-    width: 136px;
+    max-width: 23vw;
     margin: 0 auto 24px;
   }
 }
@@ -406,8 +412,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    width: 167px;
-    margin: 0 auto 86px;
+    max-width: 28vw;
+    margin: 0 auto 20px;
   }
 }
 
@@ -432,7 +438,7 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
-    width: 411px;
+    max-width: 411px;
     padding-left: 37px;
     transform: translate(0, -50px);
   }
@@ -481,7 +487,7 @@
     padding-left: 38px;
     padding-right: 37px;
     padding-top: 25px;
-    padding-bottom: 28px;
+    padding-bottom: 27px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -528,6 +534,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    max-width: 40vw;
   }
 }
 
@@ -539,6 +546,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 4px;
+    max-width: 35vw;
   }
 
   @media (min-width: $desktop-width) {
@@ -562,6 +570,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    max-width: 60%;
   }
 }
 
@@ -572,6 +581,7 @@
   @media (min-width: $tablet-width) {
     min-width: 94px;
     text-align: right;
+    max-width: 35%;
   }
 
   @media (min-width: $desktop-width) {
@@ -605,6 +615,7 @@
     justify-content: flex-end;
     padding-top: 71px;
     padding-bottom: 69px;
+    padding-right: 24px;
     background-image: url("../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -636,7 +647,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 58px;
+      top: calc(50% - 42px);
       left: 78px;
     }
 
@@ -665,8 +676,8 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    margin-right: 124px;
     text-align: left;
+    width: 36vw;
   }
 
   @media (min-width: $desktop-width) {
