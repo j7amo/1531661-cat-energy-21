@@ -92,8 +92,7 @@
   margin: 0;
 
   @media (min-width: $desktop-width) {
-    width: 244px;
-    height: 40px;
+    max-width: 17vw;
   }
 }
 

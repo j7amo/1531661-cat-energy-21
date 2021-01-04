@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 99px;
+    margin-bottom: 97px;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 77px;
+    margin-bottom: 71px;
   }
 }
 
@@ -95,7 +95,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 90px;
+      padding-top: 75px;
     }
   }
 
@@ -112,7 +112,7 @@
     min-width: 245px;
     padding-left: 37px;
     padding-right: 38px;
-    background: linear-gradient($basic-white 17%, $basic-grey 17%);
+    background: linear-gradient($basic-white 88px, $basic-grey 88px);
   }
 }
 
@@ -293,7 +293,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 33vw;
+    max-width: 40vw;
     border-bottom: 1px solid $special-grey;
     padding-top: 6px;
     padding-bottom: 8px;
@@ -371,6 +371,10 @@
     max-width: 23vw;
     margin: 0 auto 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 12vw;
+  }
 }
 
 .goods__all::before,
@@ -414,6 +418,10 @@
     line-height: 18px;
     max-width: 28vw;
     margin: 0 auto 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 12vw;
   }
 }
 
@@ -496,6 +504,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-wrap: nowrap;
     padding-left: 0;
     padding-right: 0;
     padding-top: 15px;
@@ -536,6 +545,10 @@
     line-height: 20px;
     max-width: 40vw;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 20vw;
+  }
 }
 
 .goods__extra-info {
@@ -552,7 +565,9 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding-top: 9px;
-    min-width: 325px;
+    min-width: 300px;
+    max-width: 22vw;
+    margin-right: 25px;
   }
 }
 
@@ -585,7 +600,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 80px;
+    min-width: 58px;
     text-align: left;
   }
 }
@@ -625,9 +640,10 @@
 
   @media (min-width: $desktop-width) {
     min-width: 245px;
-    height: 289px;
+    min-height: 289px;
     padding-top: 188px;
     padding-bottom: 42px;
+    padding-right: 0;
     justify-content: center;
     background-image: url("../img/gift-photo-desktop.jpg");
 
@@ -682,6 +698,6 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    margin: 0;
+    width: 14vw;
   }
 }
