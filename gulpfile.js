@@ -6,9 +6,15 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
 const sync = require("browser-sync").create();
+
+// зачем вообще папка BUILD???
 
 // Styles
 
@@ -21,29 +27,52 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(sourcemap.write("."))
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    // что за синхронизация?
     .pipe(sync.stream());
 }
 
 exports.styles = styles;
 
-// Images optimization
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"));
+}
+
+// Scripts
+
+const scripts = () => {
+
+  // для каждого скрипта писать своё или как-то объединить?
+  return gulp.src("source/js/script.js")
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
+
+// Images
 
 const images = () => {
-  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({progressive: true}),
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.images = images;
 
-// WebP images
+// WebP
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{jpg,png}")
@@ -53,12 +82,49 @@ const createWebp = () => {
 
 exports.createWebp = createWebp;
 
+// Sprite
+
+const sprite = () => {
+  // речь об svg-иконках, которые мы инлайним в html? не все svg-изображения мы инлайним...
+  return gulp.src("source/img/icons/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+}
+
+exports.sprite = sprite;
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+    // речь о фавиконке? мы её тоже делаем?
+    "source/*.ico",
+    // нафига мы копируем картинки? images ведь и так это делает...
+    "source/img/**/*.{jpg,png,svg}",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
+exports.copy = copy;
+
+// Clean
+
+const clean = () => {
+  // удаляется сама папка или содержимое?
+  return del("build");
+};
+
 // Server
 
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -69,13 +135,57 @@ const server = (done) => {
 
 exports.server = server;
 
+// Reload
+
+const reload = done => {
+  sync.reload();
+  done();
+}
+
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  // опять же за какими файлами JS мы следим?
+  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
+// Build
+
+const build = gulp.series(
+  clean,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    // copy сомнительный...
+    copy,
+    images,
+    createWebp
+  ));
+
+exports.build = build;
+
+// Default
+
+// в критерии Б24 написано, что npm run build — запускает сборку проекта;
+// npm run start — запускает сборку проекта build, а после запускает server.
+// почему просто не вызвать здесь build сначала?
 exports.default = gulp.series(
-  styles, server, watcher
-);
+  clean,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    copy,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
+
+// все пути к файлам изменить с учётом того, что мы обращаемся к папке build?
