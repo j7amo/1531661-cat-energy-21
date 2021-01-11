@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -33,11 +34,24 @@ exports.styles = styles;
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 3})
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.svgo()
     ]))
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.images = images;
+
+// WebP images
+
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.createWebp = createWebp;
 
 // Server
 
