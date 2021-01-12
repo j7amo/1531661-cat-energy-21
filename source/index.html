@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body page__body--index-background">
     <header class="page-header">
@@ -109,23 +110,25 @@
                 Отличный результат без изнуряющих тренировок!
                 При этом он не менял своих привычек
                 и по-прежнему спит по 16 часов в день. </p>
-              <dl class="results__list list">
-                <div class="results__item results__item--left">
-                  <dt class="results__number">5 кг</dt>
-                  <dd class="results__description">снижение веса</dd>
+              <div class="results__numbers-wrapper">
+                <dl class="results__list list">
+                  <div class="results__item results__item--left">
+                    <dt class="results__number">5 кг</dt>
+                    <dd class="results__description">снижение веса</dd>
+                  </div>
+                  <div class="results__item results__item--right">
+                    <dt class="results__number">60 дней</dt>
+                    <dd class="results__description">затрачено времени</dd>
+                  </div>
+                </dl>
+                <div class="results__price">
+                  <span class="results__price-first">
+                    Затраты на питание:
+                  </span>
+                  <span class="results__price-second">
+                    15 000 руб.
+                  </span>
                 </div>
-                <div class="results__item results__item--right">
-                  <dt class="results__number">60 дней</dt>
-                  <dd class="results__description">затрачено времени</dd>
-                </div>
-              </dl>
-              <div class="results__price">
-                <span class="results__price-first">
-                  Затраты на питание:
-                </span>
-                <span class="results__price-second">
-                  15 000 руб.
-                </span>
               </div>
             </div>
             <div class="results__photos-wrapper slider">
@@ -202,6 +205,7 @@
         <section class="map">
           <h2 class="visually-hidden">Карта проезда</h2>
           <div class="map__wrapper">
+            <iframe class="map__embedded center-x" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5347.953226887687!2d30.331179399743757!3d59.93883705222096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5Lzg!5e0!3m2!1sru!2sru!4v1609831919382!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/location-tablet@2x.webp 2x">
@@ -257,8 +261,8 @@
         </div>
       </section>
     </footer>
-    <script src="js/mobile-menu.js"></script>
-    <script src="js/mobile-slider.js"></script>
-    <script src="js/tablet-slider.js"></script>
+    <script src="js/mobile-menu.min.js"></script>
+    <script src="js/mobile-slider.min.js"></script>
+    <script src="js/tablet-slider.min.js"></script>
   </body>
 </html>

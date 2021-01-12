@@ -16,6 +16,7 @@
     background-color: $basic-white;
 
     position: absolute;
+    z-index: 3;
     top: 95px;
     left: 110px;
   }
@@ -52,26 +53,31 @@
 }
 
 .contacts__promo {
-  min-width: 140px;
+  min-width: 135px;
   min-height: 64px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-
   color: $special-black;
-
   margin: 0;
+  padding-right: 5px;
+  margin-right: 5px;
+  overflow: hidden;
+  max-width: 135px;
 
   @media (min-width: $tablet-width) {
     min-height: 84px;
     font-weight: normal;
     font-size: 20px;
     line-height: 25px;
+    max-width: 250px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 84px;
     padding-top: 3px;
+    max-width: 200px;
+    max-height: 150px;
   }
 }
 
@@ -81,19 +87,24 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-
   color: $special-dark-grey;
-
   margin: 0;
+  padding-right: 5px;
+  overflow: hidden;
+  max-width: 140px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
     font-size: 16px;
     text-align: right;
+    max-width: 250px;
+    padding-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    max-width: 155px;
+    max-height: 150px;
   }
 }
 

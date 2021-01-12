@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -22,9 +23,8 @@
             </svg>
           </a>
           <nav class="main-navigation">
-            <button class="main-navigation__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <input class="main-navigation__toggle hide" type="checkbox" id="show-hide-menu" checked>
+            <label class="visually-hidden" for="show-hide-menu">Нажмите, чтобы показать или скрыть меню</label>
             <ul class="main-navigation__list list">
               <li class="main-navigation__item">
                 <a class="main-navigation__link" href="index.html">Главная</a>
@@ -64,7 +64,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Pro 500 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Pro<br class="goods__linebreak goods__linebreak--tablet"> 500 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -106,7 +106,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Pro 1000 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Pro<br class="goods__linebreak goods__linebreak--tablet"> 1000 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -148,7 +148,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Pro 500 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Pro<br class="goods__linebreak goods__linebreak--tablet"> 500 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -190,7 +190,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Pro 1000 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Pro<br class="goods__linebreak goods__linebreak--tablet"> 1000 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -232,7 +232,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Slim 500 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Slim<br class="goods__linebreak goods__linebreak--tablet"> 500 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -274,7 +274,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Slim 1000 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Slim<br class="goods__linebreak goods__linebreak--tablet"> 1000 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -316,7 +316,7 @@
                   </div>
                   <div class="goods__item-text-wrapper">
                     <a class="goods__title-link" href="#">
-                      <h3 class="goods__title">Cat Energy Slim 500 г</h3>
+                      <h3 class="goods__title">Cat Energy<br class="goods__linebreak goods__linebreak--mobile"> Slim<br class="goods__linebreak goods__linebreak--tablet"> 500 г</h3>
                     </a>
                     <dl class="goods__stats">
                       <div class="goods__stats-wrapper">
@@ -431,6 +431,7 @@
         <section class="map">
           <h2 class="visually-hidden">Карта проезда</h2>
           <div class="map__wrapper">
+            <iframe class="map__embedded center-x" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5347.953226887687!2d30.331179399743757!3d59.93883705222096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5Lzg!5e0!3m2!1sru!2sru!4v1609831919382!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/location-tablet@2x.webp 2x">
@@ -486,5 +487,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/mobile-menu.min.js"></script>
   </body>
 </html>

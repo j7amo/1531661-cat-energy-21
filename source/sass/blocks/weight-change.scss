@@ -1,23 +1,22 @@
 .weight-change {
-  min-height: 601px;
   padding-top: 22px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 374px;
-    margin-bottom: 56px;
+    margin-bottom: 59px;
   }
 }
 
 .weight-change__list {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
@@ -34,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 372px;
-    padding: 77px 18px 53px 52px;
+    padding: 77px 18px 59px 52px;
     margin: 0 0 30px;
   }
 
@@ -44,12 +43,6 @@
     margin: 0;
 
     flex-grow: 1;
-  }
-}
-
-.weight-change__item:first-child {
-  @media (min-width: $desktop-width) {
-    margin-right: 80px;
   }
 }
 
@@ -66,7 +59,9 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
+    max-width: 400px;
     margin: 0;
+    margin-bottom: 23px;
     padding-left: 0;
   }
 
@@ -74,7 +69,8 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 0 162px;
+    margin: 0 0 73px 162px;
+    padding-right: 0;
   }
 }
 
@@ -151,7 +147,6 @@
     color: $basic-black;
     width: 377px;
     padding-right: 3px;
-    margin-top: 25px;
     margin-bottom: 31px;
     border-bottom: none;
   }
@@ -160,7 +155,6 @@
     width: 467px;
     min-height: 72px;
     padding-right: 2px;
-    margin-top: 73px;
     margin-bottom: 6px;
   }
 
@@ -176,13 +170,16 @@
 }
 
 .weight-change__link {
+  display: inline-flex;
+  align-items: center;
   position: relative;
   font-size: 16px;
   line-height: 16px;
   padding-left: 1px;
-  text-align: center;
+  margin-top: auto;
   text-transform: uppercase;
   color: $basic-black;
+  max-width: 200px;
 
   @media (min-width: $tablet-width) {
     font-weight: normal;
@@ -193,7 +190,6 @@
   &::after {
     position: absolute;
     content: "";
-    top: 2px;
     right: -50px;
     width: 32px;
     height: 10px;
@@ -201,13 +197,7 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 10px;
-      right: -60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 10px;
-      right: -60px;
+      right: -57px;
     }
   }
 

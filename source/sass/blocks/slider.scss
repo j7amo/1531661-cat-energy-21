@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     width: 640px;
     min-height: 534px;
+    margin-bottom: 37px;
   }
 }
 
@@ -121,14 +122,23 @@
 }
 
 .slider__toggles-inner--mobile {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 83px 1fr;
+  grid-column-gap: 16px;
+  justify-items: center;
   align-items: center;
-  width: 220px;
-  height: 37px;
+  min-height: 38px;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.slider__legend {
+  border-bottom: 2px solid transparent;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px dotted $basic-black-op-040;
   }
 }
 
@@ -136,14 +146,27 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding-left: 2px;
+  padding-right: 2px;
+  max-width: 82px;
+  overflow: hidden;
+
+  &--before-mobile,
+  &--before-tablet {
+    justify-self: flex-end;
+  }
+
+  &--before-tablet {
+    margin-right: 5px;
+  }
+
+  &--after-mobile,
+  &--after-tablet {
+    justify-self: flex-start;
+  }
 
   &:hover .slider__legend {
     border-bottom: 2px solid $basic-black-op-040;
-    transform: translateY(1px);
-
-    @media (min-width: $tablet-width) {
-      transform: translateY(0);
-    }
   }
 
   &:focus {
@@ -151,29 +174,32 @@
 
     & > .slider__legend {
       border-bottom: 2px solid $basic-black-op-040;
-      transform: translateY(1px);
-
-      @media (min-width: $tablet-width) {
-        transform: translateY(0);
-      }
     }
   }
 
   &:active {
     & > .slider__legend {
-      border-bottom: none;
-      transform: translateY(0);
+      border-bottom: 2px solid transparent;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 55px;
   }
 }
 
 .slider__toggles--tablet {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 428px 1fr;
+  grid-column-gap: 18px;
+  justify-items: center;
+  align-items: center;
+  min-height: 38px;
   cursor: pointer;
-  width: 607px;
-  height: 32px;
-  margin-bottom: 23px;
 
   @media (min-width: $desktop-width) {
     width: 596px;
@@ -189,9 +215,8 @@
 .slider__track {
   position: relative;
   cursor: pointer;
-  width: 84px;
+  min-width: 84px;
   height: 14px;
-
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid $special-grey;
@@ -234,16 +259,12 @@
 }
 
 .slider__range {
-  width: 428px;
+  min-width: 428px;
 
   appearance: none;
   height: 6px;
   background-color: $basic-grey-5;
   border-radius: 6px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 13px;
-  }
 
   &:hover ~ .slider__legend {
     border-bottom: 2px solid $special-grey-3;
