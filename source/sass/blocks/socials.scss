@@ -28,27 +28,40 @@
 .socials__button {
   display: inline-flex;
 
-  &:focus .socials__network {
+  &:focus .socials__network--vkontakte {
+    fill: $basic-green;
+  }
+
+  &:focus .socials__network--instagram {
     fill: $basic-green;
   }
 
   &:focus .socials__network--facebook {
+    fill: none;
     stroke: $basic-green;
+  }
+
+  &:hover .socials__network--vkontakte {
+    fill: $basic-green;
+  }
+
+  &:hover .socials__network--instagram {
+    fill: $basic-green;
+  }
+
+  &:hover .socials__network--facebook {
+    fill: none;
+    stroke: $basic-green;
+  }
+
+  &:active .socials__network {
+    opacity: 0.3;
   }
 }
 
 .socials__network {
-  fill: $special-grey-3;
-
-  &:hover {
-    fill: $basic-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   &--vkontakte {
+    fill: $special-grey-3;
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 22px;
@@ -56,6 +69,7 @@
   }
 
   &--instagram {
+    fill: $special-grey-3;
     @media (min-width: $tablet-width) {
       width: 23px;
       height: 23px;
@@ -63,12 +77,8 @@
   }
 
   &--facebook {
+    fill: none;
     stroke: $special-grey-3;
-
-    &:hover {
-      stroke: $basic-green;
-    }
-
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 30px;

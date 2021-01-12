@@ -14,8 +14,6 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
 
-// зачем вообще папка BUILD???
-
 // Styles
 
 const styles = () => {
@@ -30,7 +28,6 @@ const styles = () => {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    // что за синхронизация?
     .pipe(sync.stream());
 }
 
@@ -47,8 +44,6 @@ const html = () => {
 // Scripts
 
 const scripts = () => {
-
-  // для каждого скрипта писать своё или как-то объединить?
   return gulp.src("source/js/*.js")
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
@@ -85,7 +80,6 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  // речь об svg-иконках, которые мы инлайним в html? не все svg-изображения мы инлайним...
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("svg-sprite.svg"))
@@ -99,10 +93,6 @@ exports.sprite = sprite;
 const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
-    // речь о фавиконке? мы её тоже делаем?
-    "source/*.ico",
-    // нафига мы копируем картинки? images ведь и так это делает...
-    "source/img/**/*.{jpg,png,svg}",
   ], {
     base: "source"
   })
@@ -115,7 +105,6 @@ exports.copy = copy;
 // Clean
 
 const clean = () => {
-  // удаляется сама папка или содержимое?
   return del("build");
 };
 
@@ -145,9 +134,8 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series(styles));
-  // опять же за какими файлами JS мы следим?
-  gulp.watch("source/js/script.js", gulp.series(scripts));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
@@ -160,7 +148,6 @@ const build = gulp.series(
     html,
     scripts,
     sprite,
-    // copy сомнительный...
     copy,
     images,
     createWebp
@@ -170,22 +157,8 @@ exports.build = build;
 
 // Default
 
-// в критерии Б24 написано, что npm run build — запускает сборку проекта;
-// npm run start — запускает сборку проекта build, а после запускает server.
-// почему просто не вызвать здесь build сначала?
 exports.default = gulp.series(
-  clean,
-  gulp.parallel(
-    styles,
-    html,
-    scripts,
-    sprite,
-    copy,
-    createWebp
-  ),
-  gulp.series(
-    server,
-    watcher
-  ));
-
-// все пути к файлам изменить с учётом того, что мы обращаемся к папке build?
+  build,
+  server,
+  watcher
+);
