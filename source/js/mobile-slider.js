@@ -1,11 +1,12 @@
-let hiddenCheckbox = document.querySelector('.slider__toggle');
-let beforeToggle = document.querySelector('.slider__legend-button--before-mobile');
-let afterToggle = document.querySelector('.slider__legend-button--after-mobile');
-let beforeAfterToggle = document.querySelector('.slider__track');
-let itemBefore = document.querySelector('.slider__item--before');
-let itemAfter = document.querySelector('.slider__item--after');
+const slider = document.querySelector('.slider');
+const hiddenCheckbox = slider.querySelector('.slider__toggle');
+const itemBefore = slider.querySelector('.slider__item--before');
+const itemAfter = slider.querySelector('.slider__item--after');
+const beforeToggle = slider.querySelector('.slider__legend-button--before-mobile');
+const afterToggle = slider.querySelector('.slider__legend-button--after-mobile');
+const beforeAfterToggle = slider.querySelector('.slider__track');
 
-let showItemBefore = function () {
+const showItemBefore = function () {
   hiddenCheckbox.checked = true;
   itemAfter.classList.remove("shown");
   itemAfter.classList.add("hidden");
@@ -13,7 +14,7 @@ let showItemBefore = function () {
   itemBefore.classList.add("shown");
 };
 
-let showItemAfter = function () {
+const showItemAfter = function () {
   hiddenCheckbox.checked = false;
   itemBefore.classList.remove("shown");
   itemBefore.classList.add("hidden");

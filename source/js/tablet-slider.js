@@ -1,8 +1,8 @@
-let sliderItemBefore = document.querySelector('.slider__item--before');
-let sliderItemAfter = document.querySelector('.slider__item--after');
-let rangeSlider = document.querySelector('.slider__range');
-let beforeToggleTablet = document.querySelector('.slider__legend-button--before-tablet');
-let afterToggleTablet = document.querySelector('.slider__legend-button--after-tablet');
+const sliderItemBefore = slider.querySelector('.slider__item--before');
+const sliderItemAfter = slider.querySelector('.slider__item--after');
+const rangeSlider = slider.querySelector('.slider__range');
+const beforeToggleTablet = slider.querySelector('.slider__legend-button--before-tablet');
+const afterToggleTablet = slider.querySelector('.slider__legend-button--after-tablet');
 
 function moveSlider() {
     sliderItemBefore.style.width = 100 - rangeSlider.value + "%";
