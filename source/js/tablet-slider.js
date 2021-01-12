@@ -10,11 +10,11 @@ function moveSlider() {
 }
 
 beforeToggleTablet.addEventListener('click', function() {
-  rangeSlider.value = rangeSlider.value - 5;
+  rangeSlider.value = rangeSlider.min;
   moveSlider();
 });
 
 afterToggleTablet.addEventListener('click', function() {
-  rangeSlider.value = rangeSlider.value + 5;
+  rangeSlider.value = rangeSlider.max;
   moveSlider();
 });
