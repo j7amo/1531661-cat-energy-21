@@ -62,6 +62,7 @@
 .socials__network {
   &--vkontakte {
     fill: $special-grey-3;
+
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 22px;
@@ -70,6 +71,7 @@
 
   &--instagram {
     fill: $special-grey-3;
+
     @media (min-width: $tablet-width) {
       width: 23px;
       height: 23px;
@@ -79,6 +81,7 @@
   &--facebook {
     fill: none;
     stroke: $special-grey-3;
+
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 30px;
