@@ -53,6 +53,10 @@
 }
 
 .slider__item--after {
+  @media (max-width: $mobile-width-only) {
+    left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     top: 10px;
     right: 3px;
@@ -96,7 +100,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    object-position: calc(0% - 26px);
+    object-position: -26px;
   }
 }
 
