@@ -8,31 +8,31 @@ const beforeAfterToggle = slider.querySelector('.slider__track');
 
 const showItemBefore = function () {
   hiddenCheckbox.checked = true;
-  itemAfter.classList.remove("shown");
-  itemAfter.classList.add("hidden");
-  itemBefore.classList.remove("hidden");
-  itemBefore.classList.add("shown");
+  itemAfter.classList.remove('shown');
+  itemAfter.classList.add('hidden');
+  itemBefore.classList.remove('hidden');
+  itemBefore.classList.add('shown');
 };
 
 const showItemAfter = function () {
   hiddenCheckbox.checked = false;
-  itemBefore.classList.remove("shown");
-  itemBefore.classList.add("hidden");
-  itemAfter.classList.remove("hidden");
-  itemAfter.classList.add("shown");
+  itemBefore.classList.remove('shown');
+  itemBefore.classList.add('hidden');
+  itemAfter.classList.remove('hidden');
+  itemAfter.classList.add('shown');
 };
 
 hiddenCheckbox.addEventListener('change', function() {
   if (hiddenCheckbox.checked) {
-    itemAfter.classList.remove("shown");
-    itemAfter.classList.add("hidden");
-    itemBefore.classList.remove("hidden");
-    itemBefore.classList.add("shown");
+    itemAfter.classList.remove('shown');
+    itemAfter.classList.add('hidden');
+    itemBefore.classList.remove('hidden');
+    itemBefore.classList.add('shown');
   } else {
-    itemBefore.classList.remove("shown");
-    itemBefore.classList.add("hidden");
-    itemAfter.classList.remove("hidden");
-    itemAfter.classList.add("shown");
+    itemBefore.classList.remove('shown');
+    itemBefore.classList.add('hidden');
+    itemAfter.classList.remove('hidden');
+    itemAfter.classList.add('shown');
   }
 });
 

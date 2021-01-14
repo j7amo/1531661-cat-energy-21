@@ -5,8 +5,8 @@ const beforeToggleTablet = slider.querySelector('.slider__legend-button--before-
 const afterToggleTablet = slider.querySelector('.slider__legend-button--after-tablet');
 
 function moveSlider() {
-    sliderItemBefore.style.width = 100 - rangeSlider.value + "%";
-    sliderItemAfter.style.width = rangeSlider.value + "%";
+    sliderItemBefore.style.width = 100 - rangeSlider.value + '%';
+    sliderItemAfter.style.width = rangeSlider.value + '%';
 }
 
 beforeToggleTablet.addEventListener('click', function() {
