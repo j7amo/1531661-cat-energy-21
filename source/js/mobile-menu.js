@@ -1,5 +1,5 @@
-let menuToggle = document.querySelector('.main-navigation__toggle');
-let menu = document.querySelector('.main-navigation__list');
+const menuToggle = document.querySelector('.main-navigation__toggle');
+const menu = document.querySelector('.main-navigation__list');
 
 menu.classList.add("hide");
 menuToggle.classList.remove("hide");

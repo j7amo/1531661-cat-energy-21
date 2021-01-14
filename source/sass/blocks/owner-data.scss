@@ -252,6 +252,22 @@
     }
   }
 
+  &::-moz-placeholder {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+
+    @media (min-width: $tablet-width) {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 45px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
